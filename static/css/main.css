@@ -12,6 +12,14 @@
   --neutral-subtle-color: #d1d4c7;
   --neutral-light-color: #fbfcf7;
   /* color system end */
+  
+  /* breakpoints start */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* breakpoints start */
 }
 
 /* font system start*/
