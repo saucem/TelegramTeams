@@ -1,9 +1,313 @@
 :root{
-  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* color system start */
+  --primary-color: #0778b4;
+  --primary-subtle-color: #2aabee;
+  --primary-light-color: #b7e6ff;
+  --secondary-color: #03d689;
+  --secondary-subtle-color: #2cfdb4;
+  --secondary-light-color: #cdf9e9;
+  --neutral-color: #313638;
+  --neutral-subtle-color: #d1d4c7;
+  --neutral-light-color: #fbfcf7;
+  --danger-color: #dc3545;
+  --danger-subtle-color:#f1aeb5;
+  --danger-light-color: #f8d7da;
+  --warning-color: #ffc107;
+  --warning-subtle-color: #ffe69c;
+  --warning-light-color: #fff3cd;
+  /* color system end */
+  
+  /* breakpoints start */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* breakpoints start */
 }
+
+/* font system start*/
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* font system end*/
 
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* semantic tags styling start */
+body{
+  min-height: 100vh;
+}
+
+header{
+  min-height: 8vh;
+  background-color: var(--neutral-light-color);
+  border-bottom: 1px var(--neutral-subtle-color) solid;
+  display: flex;
+  align-items: center;
+}
+
+main{
+  min-height: 70vh;
+}
+
+footer{
+  min-height: 22vh;
+  color:var(--neutral-subtle-color);
+  background-color: var(--neutral-color);
+}
+/* semantic tags styling end */
+
+/* display modes start */
+.d-flex{
+  display: flexbox;
+  display: flex;
+}
+
+.d-none{
+  display: none;
+}
+/* display modes end */
+
+/* text management start */
+.text-start{text-align: start;}
+.text-center{text-align: center;}
+.text-end{text-align: end;}
+/* text management end */
+
+/* grid system start */
+/* grid system end */
+
+/* navigation styles start */
+.brand-logo{
+  max-height:10vh;
+  vertical-align: middle;
+}
+
+.nav-bar{
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items{
+  margin: 0 10px;
+  column-gap: 24px;
+}
+
+.nav-item{
+  list-style: none;
+}
+
+.nav-link{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--neutral-color);
+  border-bottom: 2px transparent solid;
+  transition: all 200ms ease;
+  &:hover{
+    color: var(--primary-subtle-color);
+    &::after,
+    &::before{
+      width: 100%;
+      left: 0;
+    }
+  }
+  &::after,
+  &::before{
+    content: ''; 
+    position: absolute;
+    top: calc(100% + 2px);
+    width: 0;
+    right: 0;
+    height: 2px;
+  }
+  &::before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    background: var(--neutral-color);
+  }
+  &::after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: var(--primary-subtle-color);
+  }
+}
+/* navigation styles end */
+
+/* component styling start */
+.btn{
+  font-size: 14px;
+  border-radius: 6px;
+  border: 2px transparent solid;
+  padding: 5px 10px;
+  margin: 0px 4px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+.btn:hover{
+  border-color: transparent;
+  box-shadow: 0px 0px 100px rgba(0,0,0,.10) inset;
+}
+
+.btn-primary{
+  color: var(--neutral-light-color);
+  background-color: var(--primary-color);
+}
+
+.btn-primary-outline{
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary-outline:hover{
+  color: var(--neutral-light-color);
+  background-color: var(--primary-color);
+}
+
+.btn-secondary{
+  color: var(--neutral-light-color);
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary-outline{
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover, .btn-secondary-outline:hover{
+  color: var(--neutral-light-color);
+  background-color: var(--secondary-color);
+}
+
+.btn-danger{
+  color: var(--neutral-light-color);
+  background-color: var(--danger-color);
+}
+
+.btn-danger-outline{
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-danger:hover, .btn-danger-outline:hover{
+  color: var(--neutral-light-color);
+  background-color: var(--danger-color);
+}
+
+.btn-warning{
+  color: var(--neutral-light-color);
+  background-color: var(--warning-color);
+}
+
+.btn-warning-outline{
+  color: var(--warning-color);
+  border-color: var(--warning-color);
+}
+
+.btn-warning:hover, .btn-warning-outline:hover{
+  color: var(--neutral-light-color);
+  background-color: var(--warning-color);
+}
+/* component styling end */
+
+/* wrappers styling start */
+.dummy{
+  display: inline-block;
+  background-color: var(--primary-subtle-color);
+  height: 100px;
+}
+
+.container{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #d1d4c7;
+  min-height: 120px;
+}
+
+@media (width >= 576px){
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media (width >= 768px){
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media (width >= 992px){
+  .container{
+    max-width: 960px;
+  }
+}
+
+@media (width >= 1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+
+@media (width >= 1400px){
+  .container{
+    max-width: 1320px;
+  }
+}
+
+/* Bootstrap column emulation start*/
+.row{
+  display: grid;
+  width: 100%;
+  padding: 0 6px;
+  grid-template-columns: repeat(12,1fr);
+  gap: 12px;
+}
+
+.col-1{grid-column-start: span 1;}
+.col-2{grid-column-start: span 2;}
+.col-3{grid-column-start: span 3;}
+.col-4{grid-column-start: span 4;}
+.col-5{grid-column-start: span 5;}
+.col-6{grid-column-start: span 6;}
+.col-7{grid-column-start: span 7;}
+.col-8{grid-column-start: span 8;}
+.col-9{grid-column-start: span 9;}
+.col-10{grid-column-start: span 10;}
+.col-11{grid-column-start: span 11;}
+.col-12{grid-column-start: span 12;}
+
+/* Bootstrap column emulation start*/
+
+
+/* wrappers styling end */
