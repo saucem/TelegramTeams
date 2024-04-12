@@ -5,27 +5,24 @@
   --primary-color: #0778b4;
   --primary-subtle-color: #2aabee;
   --primary-light-color: #b7e6ff;
+  --primary-dark-color: #0449A0;
   --secondary-color: #03d689;
-  --secondary-subtle-color: #2cfdb4;
-  --secondary-light-color: #cdf9e9;
+  --secondary-subtle-color: #44E66C;
+  --secondary-light-color: #E1FBCC;
+  --secondary-dark-color: #009C70;
   --neutral-color: #313638;
   --neutral-subtle-color: #d1d4c7;
   --neutral-light-color: #fbfcf7;
+  --neutral-dark-color: #1d1d1c;
   --danger-color: #dc3545;
   --danger-subtle-color:#f1aeb5;
   --danger-light-color: #f8d7da;
+  --danger-dark-color: #C41115;
   --warning-color: #ffc107;
   --warning-subtle-color: #ffe69c;
   --warning-light-color: #fff3cd;
+  --warning-dark-color: #FF8C44;
   /* color system end */
-  
-  /* breakpoints start */
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  /* breakpoints start */
 }
 
 /* font system start*/
@@ -106,7 +103,7 @@ footer{
 
 /* navigation styles start */
 .brand-logo{
-  max-height:10vh;
+  max-height:8vh;
   vertical-align: middle;
 }
 
@@ -176,7 +173,7 @@ footer{
 
 .btn:hover{
   border-color: transparent;
-  box-shadow: 0px 0px 100px rgba(0,0,0,.10) inset;
+  /* box-shadow: 0px 0px 100px rgba(0,0,0,.10) inset; */
 }
 
 .btn-primary{
@@ -191,7 +188,7 @@ footer{
 
 .btn-primary:hover, .btn-primary-outline:hover{
   color: var(--neutral-light-color);
-  background-color: var(--primary-color);
+  background-color: var(--primary-dark-color);
 }
 
 .btn-secondary{
@@ -206,7 +203,7 @@ footer{
 
 .btn-secondary:hover, .btn-secondary-outline:hover{
   color: var(--neutral-light-color);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-dark-color);
 }
 
 .btn-danger{
@@ -221,7 +218,7 @@ footer{
 
 .btn-danger:hover, .btn-danger-outline:hover{
   color: var(--neutral-light-color);
-  background-color: var(--danger-color);
+  background-color: var(--danger-dark-color);
 }
 
 .btn-warning{
@@ -236,7 +233,7 @@ footer{
 
 .btn-warning:hover, .btn-warning-outline:hover{
   color: var(--neutral-light-color);
-  background-color: var(--warning-color);
+  background-color: var(--warning-dark-color);
 }
 /* component styling end */
 
