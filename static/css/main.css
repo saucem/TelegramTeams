@@ -414,7 +414,6 @@ p{line-height: 1.25em;}
   .d-sm-none{display: none;}
   .d-sm-block{display: block;}
   .d-sm-inblock{display: inline-block;}
-  section#banner{min-height: 90vh;}
 }
 
 /* medium */
@@ -431,6 +430,7 @@ p{line-height: 1.25em;}
   .d-lg-none{display: none;}
   .d-lg-block{display: block;}
   .d-lg-inblock{display: inline-block;}
+  section#banner{min-height: 90vh;}
 }
 
 /* x-large */
