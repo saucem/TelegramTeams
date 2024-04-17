@@ -9,77 +9,73 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <title>Telegram Teams | Inicio</title>
 </head>
-<body>
+<body class="poppins-regular">
   <header>
     <nav class="nav-bar">
-      <div class="brand">
-        <a href="index.html" class="brand-name"><img src="static/css/img/imagotipo.png" alt="Logo" class="brand-logo"></a>
-      </div>
-      <ul class="nav-items d-flex">
+      <ul class="nav-items d-flex" id="collapsible">
+        <input type="checkbox" name="checkbox" id="toggler" class="d-none">
+        <li class="brand">
+          <a href="index.html" class="brand-name"><img src="static/img/imagotipo.png" alt="Logo" class="brand-logo"></a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Módulos</a></li>
         <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Precios</a></li>
         <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Soporte</a></li>
         <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Ayuda</a></li>
+        <li class="collapse-toggler">
+          <label for="toggler" class="icon-toggler">
+            <img src="static/img/list.svg" alt="Open menu" id="icon-list">
+            <img src="static/img/x.svg" alt="Open menu" id="icon-close">
+          </label>
+        </li>
+        <li class="cta d-none d-sm-inblock">
+          <a href="#" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
+          <a href="#" class="btn btn-primary-outline">Iniciar sesión</a>
+        </li>
       </ul>
-      <div class="cta">
-        <a href="#" class="btn btn-secondary">Comenzar gratis</a>
-        <a href="#" class="btn btn-primary-outline">Iniciar sesión</a>
-      </div>
     </nav>
   </header>  
   <main>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-1 dummy">1</div>
-        <div class="col-1 dummy">2</div>
-        <div class="col-1 dummy">3</div>
-        <div class="col-1 dummy">4</div>
-        <div class="col-1 dummy">5</div>
-        <div class="col-1 dummy">6</div>
-        <div class="col-1 dummy">7</div>
-        <div class="col-1 dummy">8</div>
-        <div class="col-1 dummy">9</div>
-        <div class="col-1 dummy">10</div>
-        <div class="col-1 dummy">11</div>
-        <div class="col-1 dummy">12</div>
+    <section class="container-fluid" id="banner">
+      <div class="container">
+        <div class="row-flex">
+          <img src="./static/img/imagotipo.svg" alt="logo" class="w-50">
+        </div>
+        <div class="row-flex mb-4">
+          <div class="col-6 col-lg-4" id="banner-text">
+            <h1>Cloud Based CRM</h1>
+            <h2>Lleva tu productividad a las nubes con nuestra solución para equipos de trabajo.</h2>
+          </div>
+        </div>
+        <div class="row-flex">
+          <div class="col-6 col-lg-4" id="elevator-pitch">
+            <p>
+              Telegram Teams<span class="copy">&trade;</span> combina la versatilidad de la popular plataforma
+              de mensajería con la potencia de Python<span class="copy">&trade;</span> y la solidez de MySQL<span class="copy">&trade;</span>
+              para ayudar a los equipos de trabajo a potenciar las ventas, afianzando la relación con el cliente y aumentando la tasa de conversión.
+            </p>
+            <button class="btn btn-secondary my-4">Comenzar ahora</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-2 dummy">1</div>
-        <div class="col-2 dummy">2</div>
-        <div class="col-2 dummy">3</div>
-        <div class="col-2 dummy">4</div>
-        <div class="col-2 dummy">5</div>
-        <div class="col-2 dummy">6</div>
+    </section>
+    <section class="container-fluid" id="what-is-crm">
+      <div class="container py-4">
+        <div class="row-flex">
+          <div class="col-8 col-md-6 iframe-container">
+            <iframe src="https://www.youtube.com/embed/cgNTtM44-Dk?si=NvdOozsj8-tQCxcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" class="responsive-iframe"></iframe>
+          </div>
+          <div class="col-4 col-md-6">
+            <h2 class="text-center mb-2">Por qué usar un CRM</h2>
+            <p>Acá va una explicación breve explicación de por qué usar un CRM</p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt esse vero deserunt iure eveniet sit, eos quidem ipsum beatae nobis quibusdam blanditiis doloremque. Repudiandae quia sapiente necessitatibus nobis voluptatem.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-3 dummy">1</div>
-        <div class="col-3 dummy">2</div>
-        <div class="col-3 dummy">3</div>
-        <div class="col-3 dummy">4</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4 dummy">1</div>
-        <div class="col-4 dummy">2</div>
-        <div class="col-4 dummy">3</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 dummy">1</div>
-        <div class="col-6 dummy">2</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 dummy">1</div>
-      </div>
-    </div> -->
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
   </main>
   <footer>
     <nav></nav>
