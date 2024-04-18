@@ -53,10 +53,6 @@ header{
   align-items: center;
 }
 
-main{
-  min-height: 90vh;
-}
-
 section#banner{
   background-image: linear-gradient(0deg, rgba(0,0,0,.5) 33%, rgba(0,0,0,0) 100%), url('../img/team.jpg');
   background-position: top center;
@@ -102,14 +98,28 @@ p{
 /* grid system end */
 
 /* navigation styles start */
-.brand-logo{
-  height:10vh;
+.brand{
+  line-height: 8vh;
   vertical-align: middle;
+}
+.brand-name{
+  font-size: .85em;
+  text-decoration: none;
+  color: var(--primary-color);
+  & > span{
+    color: var(--primary-subtle-color);
+  }
+}
+
+.brand-logo{
+  vertical-align: middle;
+  height: 8vh;
 }
 
 .nav-bar{
   width: 90vw;
   margin: 0 auto;
+  min-height: 8vh;
 }
 
 .nav-items{
@@ -161,6 +171,7 @@ p{
 
 .collapse-toggler{
   display: none;
+  padding: 0;
 }
 
 .icon-toggler{
@@ -219,10 +230,9 @@ p{
       gap: calc(0 * var(--gutter));
     }
 
-    [class^="col"] {padding: calc(1 * var(--gutter));}
-    [class^="col-"] {flex: 0 0 auto;}
+    [class^="col-"] {flex: 0 0 auto; padding: calc(1 * var(--gutter));}
 
-    .col{flex: 1 0 auto;}
+    .col-auto{flex: 1 0 auto;}
     .col-1{width: calc(100% / 12 * 1);}
     .col-2{width: calc(100% / 12 * 2);}
     .col-3{width: calc(100% / 12 * 3);}
@@ -327,6 +337,7 @@ p{
       .col-sm-10{width: calc(100% / 12 * 10);}
       .col-sm-11{width: calc(100% / 12 * 11);}
       .col-sm-12{width: calc(100% / 12 * 12);}
+      .w-sm-50{width: 50%;}
     }
 
     /* medium */
@@ -347,6 +358,8 @@ p{
       .col-md-10{width: calc(100% / 12 * 10);}
       .col-md-11{width: calc(100% / 12 * 11);}
       .col-md-12{width: calc(100% / 12 * 12);}
+      .brand-logo{height: 8vh;}
+      main{min-height: 92vh;}
     }
 
     /* large */
@@ -367,6 +380,8 @@ p{
       .col-lg-10{width: calc(100% / 12 * 10);}
       .col-lg-11{width: calc(100% / 12 * 11);}
       .col-lg-12{width: calc(100% / 12 * 12);}
+      .brand-logo{height: 10vh;}
+      main{min-height: 90vh;}
       section#banner{
         min-height: 90vh;
         background-position: top right;
