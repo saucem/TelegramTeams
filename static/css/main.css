@@ -167,9 +167,10 @@ p{
   display: block;
 }
 
-.clearfix{
-  clear: both;
+.modulo-text p{
+  line-height: 1.25em;
 }
+
 
 #icon-list, #icon-close{
   height: 2em;
@@ -508,13 +509,16 @@ p{
 /* particular styling end */
 #PlanesyPrecios{
   color: var(--neutral-light-color);
-  background-color: var(--secondary-dark-color);
+  background-color: var(--secondary-dark-color); 
 }
 
-/*section#Modulos{
-  color: var(--primary-light-color);
+.precios-text p{
+  line-height: 1.25em;
+}
+#Modulos{
+  color: var(--neutral-color);
   background-color: var(--primary-light-color);
-  }*/
+  }
 
   #FormRegistro{
     color: var(--neutral-light-color);
