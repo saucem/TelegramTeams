@@ -233,6 +233,11 @@ footer.modal-footer{
   display: block;
 }
 
+.modulo-text p{
+  line-height: 1.25em;
+}
+
+
 #icon-list, #icon-close{
   height: 2em;
 }
@@ -376,6 +381,13 @@ footer.modal-footer{
       #banner-text{
         text-align: left;
       }
+      #Precios-text{
+        text-align: left;
+      }
+      #Modulos-text{
+        text-align: left;
+      }
+
     }
 
     /* small */
@@ -569,7 +581,36 @@ footer.modal-footer{
     background-color: var(--neutral-color);
   }
 /* particular styling end */
+#PlanesyPrecios{
+  color: var(--neutral-light-color);
+  background-color: var(--secondary-dark-color); 
+}
 
+.precios-text p{
+  line-height: 1.25em;
+}
+#Modulos{
+  color: var(--neutral-color);
+  background-color: var(--primary-light-color);
+  }
+
+  #FormRegistro{
+    color: var(--neutral-light-color);
+    background-color: var(--neutral-color);
+    font-size: 15px;
+    position:relative;
+    min-width: 320px;
+    min-height: 90vh;
+    padding: 10px;
+    text-align: left;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--neutral-light-color);
+
+    
+  }
 
 
 
