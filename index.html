@@ -34,25 +34,51 @@
         </li>
         <li class="cta d-none d-sm-inblock">
           <a href="#" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
-          <a href="#" class="btn btn-primary-outline">Iniciar sesión</a>
+          <a href="#modal" class="btn btn-primary-outline">Iniciar sesión</a>
         </li>
       </ul>
     </nav>
   </header>  
   <main>
+    <section class="modal d-none" id="modal">
+      <div class="modal-background row-flex">
+        <div class="modal-container text-center col-6 rounded">
+          <header class="modal-header row-flex">
+            <h2 class="col-12 text-center">Iniciar sesión</h2>
+          </header>
+          <figure></figure>
+          <p class="modal-text">
+            Podes utilizar tus credenciales para iniciar sesión
+          </p>
+          <form action="" method="post" class="col-10">
+            <div class="row-flex input-group my-4">
+              <label for="user-name" class="col-10 input-label p-0">Usuario</label>
+              <input type="text" name="user-name" id="user-name" class="">
+            </div>
+            <div class="row-flex input-group my-4">
+              <label for="password" class="col-10 input-label p-0">Contraseña</label>
+              <input type="password" name="password" id="password">
+            </div>
+          </form>
+          <footer class="modal-footer"></footer>
+        </div>
+      </div>
+    </section>
     <section class="container-fluid" id="banner">
       <div class="container">
         <div class="row-flex">
-          <img src="static/img/imagotipo.png" alt="logo" class="w-50">
+          <img src="static/img/imagotipo.svg" alt="logo" class="w-50">
         </div>
-        <div class="row-flex mb-4">
-          <div class="col-6 col-lg-4" id="banner-text">
+        <div class="row-flex">
+          <div class="col-6" id="banner-text">
+            <hgroup>
             <h1>Cloud Based CRM</h1>
-            <h2>Lleva tu productividad a las nubes con nuestra solución para equipos de trabajo.</h2>
+              <p>Lleva tu productividad a las nubes con nuestra solución para equipos de trabajo.</p>
+            </hgroup>
           </div>
         </div>
         <div class="row-flex">
-          <div class="col-6 col-lg-4" id="elevator-pitch">
+          <div class="col-6" id="elevator-pitch">
             <p>
               Telegram Teams<span class="copy">&trade;</span> combina la versatilidad de la popular plataforma
               de mensajería con la potencia de Python<span class="copy">&trade;</span> y la solidez de MySQL<span class="copy">&trade;</span>

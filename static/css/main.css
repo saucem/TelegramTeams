@@ -6,7 +6,7 @@
     --primary-subtle-color: #2aabee;
     --primary-light-color: #b7e6ff;
     --primary-dark-color: #0449A0;
-    --secondary-color: #03d689;
+    --secondary-color: #03c47d;
     --secondary-subtle-color: #44E66C;
     --secondary-light-color: #E1FBCC;
     --secondary-dark-color: #009C70;
@@ -79,7 +79,62 @@ h2{
 p{
   line-height: 1.25em;
 }
+
+hgroup h1{
+  font-size: 2.5em;
+}
+
+hgroup p{
+  font-size: 1.5em;
+}
+
+.inpout-group{
+  justify-content: center;
+}
+
+label.input-label{
+  display: block;
+  text-align: left;
+}
+
+.input-group input{
+  width: 100%;
+}
 /* semantic tags styling end */
+
+/* modal dialog start */
+header.modal-header{
+  background-color: inherit;
+  border: inherit;
+}
+
+footer.modal-footer{
+  background-color: inherit;
+  height: 10vh;
+}
+
+.modal-background{
+  position: fixed;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.75);
+  z-index: 999;
+}
+
+.modal-container{
+  background-color: var(--neutral-light-color);
+}
+
+.modal:target{
+  display: block;
+}
+/* modal dialog end */
+
+
+
 
 /* display modes start */
 .d-flex{display: flex;}
@@ -222,6 +277,10 @@ p{
 /* component styling end */
 
 /* wrappers styling start */
+  .rounded{
+    border-radius: 10px;
+  }
+
   /* bootstrap column emulation start*/
     .row-flex{
       width: 100%;
