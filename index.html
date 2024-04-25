@@ -10,7 +10,7 @@
   <title>Telegram Teams | Inicio</title>
 </head>
 <body class="poppins-regular">
-  <header>
+  <header id="header">
     <nav class="nav-bar">
       <ul class="nav-items d-flex" id="collapsible">
         <input type="checkbox" name="checkbox" id="toggler" class="d-none">
@@ -40,27 +40,32 @@
     </nav>
   </header>  
   <main>
-    <section class="modal d-none" id="modal">
-      <div class="modal-background row-flex">
-        <div class="modal-container text-center col-6 rounded">
-          <header class="modal-header row-flex">
+    <section class="modal" id="modal">
+      <div class="modal-background">
+        <div class="modal-container text-center">
+          <header class="modal-header">
+            <figure class="col-8">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
             <h2 class="col-12 text-center">Iniciar sesión</h2>
           </header>
-          <figure></figure>
           <p class="modal-text">
             Podes utilizar tus credenciales para iniciar sesión
           </p>
-          <form action="" method="post" class="col-10">
+          <form action="" method="post" class="modal-form">
             <div class="row-flex input-group my-4">
-              <label for="user-name" class="col-10 input-label p-0">Usuario</label>
+              <label for="user-name" class="col input-label p-0">Usuario</label>
               <input type="text" name="user-name" id="user-name" class="">
             </div>
             <div class="row-flex input-group my-4">
-              <label for="password" class="col-10 input-label p-0">Contraseña</label>
+              <label for="password" class="col input-label p-0">Contraseña</label>
               <input type="password" name="password" id="password">
             </div>
+            <div class="row-flex justify-content-end">
+              <a href="#header" class="btn btn-neutral-outline m-1" id="dismiss-modal">Cancelar</a>
+              <button type="submit" class="btn btn-primary m-1">Ingresar</button>
+            </div>
           </form>
-          <footer class="modal-footer"></footer>
         </div>
       </div>
     </section>
