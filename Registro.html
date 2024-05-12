@@ -10,7 +10,7 @@
 </head>
 <body class="poppins-regular">
 
-    <div id="FormRegistro">
+    <div id="Registro">
         <div class="row-flex">
             <img src="static/img/imagotipo.png" alt="logo" class="w-50">
           </div>
@@ -20,18 +20,18 @@
             <br>
         <div>
             <label for="nombre">Nombre</label>
-        <input type="text" name="Nombre" required id="nombre" placeholder="Jose">
+        <input type="text" name="Nombre" id="nombre" placeholder="Jose">
         </div>
         <div>
         <label for="apellido">Apellido</label>
-        <input type="text" required name="Apellido" id="apellido" placeholder="Dominguez">
+        <input type="text"  name="Apellido" id="apellido" placeholder="Dominguez">
         </div>
         <div>
             Documento de Identidad
-            <input type="number" required minlength="6" maxlength="8" name="DNI" id="DNI" placeholder="XXXXXXXX">
+            <input type="number" minlength="6" maxlength="8" name="DNI" id="DNI" placeholder="XXXXXXXX">
             <div>
             <label for="country">País de residencia</label>
-            <select name="pais" required id="country">
+            <select name="pais" id="country">
                 <option value="Ar">Argentina</option>
                 <option value="Br">Brasil</option>
                 <option value="Co">Colombia</option>
@@ -41,14 +41,14 @@
         </div>
         <div>
             <label for="fechanac">Fecha de nacimiento</label>
-            <input type="date" required name="fechanacimiento" id="fechanac">
+            <input type="date" name="fechanacimiento" id="fechanac">
         </div>
         <div>
             <label for="email">Correo electrónico</label>
             <input type="email" name="email" id="email">
         </div>
         <div>Teléfono de contacto
-            <input type="tel" required name="Telf" id="telf">
+            <input type="tel" name="Telf" id="telf">
         </div>
         <div>
             <label for="hombre">Hombre</label>
@@ -62,13 +62,14 @@
         </div>
         <div>
             Contraseña
-            <input type="password" required name="password" id="pass">
+            <input type="password" name="password" id="pass">
+            <p id="error-pass"></p>
         </div>
         <div>
             Imagen
-            <input type="file" required name="Imagen" id="captura">
+            <input type="file" name="Imagen" id="captura">
         </div>
-        <button class="btn btn-primary my-4">Enviar</button>
+        <button type="submit" class="btn btn-primary my-4">Enviar</button>
     </fieldset>
     </form>
     </div>
@@ -81,5 +82,6 @@
         <address>Torre Madero Center,Puerto Madero, CABA. Argentina</address>
        </div>
       </footer>
+    <script src="./static/js/Validationformregister.js"></script>
 </body>
 </html>

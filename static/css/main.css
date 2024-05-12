@@ -769,8 +769,8 @@ address, .email-address{
 
   /* particular styling end */
 #PlanesyPrecios{
-  color: var(--neutral-light-color);
-  background-color: var(--secondary-dark-color); 
+  color: var(--neutral-color);
+  background-color: var(--secondary-light-color); 
 }
 
 .precios-text p{
@@ -781,7 +781,7 @@ address, .email-address{
   background-color: var(--primary-light-color);
   }
 
-  #FormRegistro{
+  #Registro{
     color: var(--neutral-light-color);
     background-color: var(--neutral-color);
     font-size: 15px;
