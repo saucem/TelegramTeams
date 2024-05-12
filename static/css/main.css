@@ -21,7 +21,7 @@
     --warning-color: #ffc107;
     --warning-subtle-color: #ffe69c;
     --warning-light-color: #fff3cd;
-    --warning-dark-color: #FF8C44;
+    --warning-dark-color: #ffb007;
   /* color system end */
 }
 
@@ -102,19 +102,27 @@ p.suggestion{
 
 .input-group{
   justify-content: start;
+  margin-bottom: 0.75em;
 }
 
 .input-label{
-  display: block;
+  width: 100%;
   text-align: left;
+  line-height: 1em;
+  vertical-align: middle;
+  font-size: 0.85em;
   color: var(--neutral-color);
 }
 
-.input{
+input{
+  vertical-align: initial;
+}
+
+.input, textarea{
   width: 100%;
   padding: 0.5em;
-  border: 2px solid var(--neutral-subtle-color);
-  border-radius: .5em;
+  border: 1px solid var(--neutral-subtle-color);
+  border-radius: 5px;
 }
 
 button{
@@ -196,8 +204,9 @@ button{
 /* component styling start */
 .btn{
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 2px transparent solid;
+  background-color: transparent;
   padding: 5px 10px;
   font-family: 'Poppins',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
@@ -375,9 +384,15 @@ address, .email-address{
 #icon-close{
   display: none;
 }
+
 /* navigation styles end */
 
 /* wrappers styling start */
+  
+  #site-nav{
+    border-right: 2px solid var(--neutral-color);
+  }
+
   .rounded{
     border-radius: 10px;
   }
@@ -563,6 +578,7 @@ address, .email-address{
       .col-md-10{width: calc(100% / 12 * 10);}
       .col-md-11{width: calc(100% / 12 * 11);}
       .col-md-12{width: calc(100% / 12 * 12);}
+      #site-nav{border-color: transparent;}
       /* .brand-logo{height: 8vh;}
       main{min-height: 92vh;} */
     }
@@ -745,6 +761,10 @@ address, .email-address{
 
   .desaturated{
     filter: grayscale();
+  }
+
+  #contact-form{
+    background-color: var(--neutral-light-color);
   }
 
   /* particular styling end */
