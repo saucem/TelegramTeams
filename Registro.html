@@ -6,71 +6,71 @@
     <!-- <link rel="icon" type="image/png" href="img/imagotipo"> -->
     
     <link rel="stylesheet" href="static/css/main.css">
-    <title>Document</title>
+    <title>Formulario de contacto</title>
 </head>
 <body class="poppins-regular">
 
-    <div id="Registro">
-        <div class="row-flex">
+    <div class="container" id="Registro">
+        <div class="row-flex justify-content-center "><!-- Lo centré como el de login -->
             <img src="static/img/imagotipo.png" alt="logo" class="w-50">
-          </div>
-        <form method="post" action="" enctype="text/plain">
-        <fieldset>
-            <legend>Formulario de Registro</legend>
-            <br>
-        <div>
-            <label for="nombre">Nombre</label>
-        <input type="text" name="Nombre" id="nombre" placeholder="Jose">
         </div>
-        <div>
-        <label for="apellido">Apellido</label>
-        <input type="text"  name="Apellido" id="apellido" placeholder="Dominguez">
-        </div>
-        <div>
-            Documento de Identidad
-            <input type="number" minlength="6" maxlength="8" name="DNI" id="DNI" placeholder="XXXXXXXX">
+        <form method="post" action="" enctype="text/plain" class="rounded mt-4" id="Formulario"><!-- le puse color claro como el de login y bordes redondeados. Quizás se pueda quitar el borde del fieldset -->
+        <fieldset class="col-12 col-md-6"><!-- le di una clase col- para que sea responsive y que le de un padding al contenido-->
+            <legend>&nbsp;Formulario de Registro&nbsp;</legend>
+            <div class="input-group mt-4>">
+                <label for="nombre" class="input-label">Nombre</label>
+                <input class="input" type="text" name="Nombre" id="nombre" placeholder="Jose">
+            </div>
             <div>
-            <label for="country">País de residencia</label>
-            <select name="pais" id="country">
-                <option value="Ar">Argentina</option>
-                <option value="Br">Brasil</option>
-                <option value="Co">Colombia</option>
-                <option value="Uy">Uruguay</option>
-                <option value="Pe">Perú</option>
-            </select>
-        </div>
-        <div>
-            <label for="fechanac">Fecha de nacimiento</label>
-            <input type="date" name="fechanacimiento" id="fechanac">
-        </div>
-        <div>
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>Teléfono de contacto
-            <input type="tel" name="Telf" id="telf">
-        </div>
-        <div>
-            <label for="hombre">Hombre</label>
-            <input type="radio" name="genero" id="hombre">
-            <label for="mujer">Mujer</label>
-            <input type="radio" name="genero" id="mujer">
-        </div>
-        <div>
-        <label for="description">Descripción</label>
-        <textarea name="Descripcion" id="description" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            Contraseña
-            <input type="password" name="password" id="pass">
-            <p id="error-pass"></p>
-        </div>
-        <div>
-            Imagen
-            <input type="file" name="Imagen" id="captura">
-        </div>
-        <button type="submit" class="btn btn-primary my-4">Enviar</button>
-    </fieldset>
+            <label for="apellido">Apellido</label>
+            <input type="text"  name="Apellido" id="apellido" placeholder="Dominguez">
+            </div>
+            <div>
+                <label for="DNI">Documento de Identidad</label>
+                <input type="number" minlength="6" maxlength="8" name="DNI" id="DNI" placeholder="XXXXXXXX">
+            </div>
+            <div>
+                <label for="country">País de residencia</label>
+                <select name="pais" id="country">
+                    <option value="Ar">Argentina</option>
+                    <option value="Br">Brasil</option>
+                    <option value="Co">Colombia</option>
+                    <option value="Uy">Uruguay</option>
+                    <option value="Pe">Perú</option>
+                </select>
+            </div>
+            <div>
+                <label for="fechanac">Fecha de nacimiento</label>
+                <input type="date" name="fechanacimiento" id="fechanac">
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>Teléfono de contacto
+                <input type="tel" name="Telf" id="telf">
+            </div>
+            <div>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="hombre">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="genero" id="mujer">
+            </div>
+            <div>
+            <label for="description">Descripción</label>
+            <textarea name="Descripcion" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                Contraseña
+                <input type="password" name="password" id="pass">
+                <p id="error-pass"></p>
+            </div>
+            <div>
+                Imagen
+                <input type="file" name="Imagen" id="captura">
+            </div>
+            <button type="submit" class="btn btn-primary my-4">Enviar</button>
+        </fieldset>
     </form>
     </div>
 
