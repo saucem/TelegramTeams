@@ -769,8 +769,8 @@ address, .email-address{
 
   /* particular styling end */
 #PlanesyPrecios{
-  color: var(--neutral-light-color);
-  background-color: var(--secondary-dark-color); 
+  color: var(--neutral-color);
+  background-color: var(--secondary-light-color); 
 }
 
 .precios-text p{
@@ -781,25 +781,28 @@ address, .email-address{
   background-color: var(--primary-light-color);
   }
 
-  #FormRegistro{
-    color: var(--neutral-light-color);
-    background-color: var(--neutral-color);
-    font-size: 15px;
-    position:relative;
-    min-width: 320px;
-    min-height: 90vh;
-    padding: 10px;
-    text-align: left;
-    margin: 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--neutral-light-color);
+#Registro{
+  color: var(--neutral-light-color);
+  background-color: var(--neutral-color);
+  font-size: 15px;
+  position:relative;
+  min-width: 320px;
+  min-height: 90vh;
+  padding: 10px;
+  text-align: left;
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--neutral-light-color);
 
-    
-  }
+  
+}
 
-
+#Formulario{
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color);
+}
 
 
 
