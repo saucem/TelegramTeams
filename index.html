@@ -34,7 +34,7 @@
         </li>
         <li class="cta d-none d-sm-inblock">
           <a href="#" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
-          <a href="#modal" class="btn btn-primary-outline">Iniciar sesión</a>
+          <a href="#modal" class="btn btn-neutral-outline">Iniciar sesión</a>
         </li>
       </ul>
     </nav>
@@ -56,13 +56,13 @@
             Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
           <form action="" method="post" class="modal-form">
-            <div class="row-flex input-group my-4">
+            <div class="input-group my-4">
               <label for="user-name" class="col input-label p-0">Usuario</label>
-              <input type="text" name="user-name" id="user-name" class="">
+              <input type="text" name="user-name" id="user-name" class="input">
             </div>
-            <div class="row-flex input-group my-4">
+            <div class="input-group my-4">
               <label for="password" class="col input-label p-0">Contraseña</label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="password" class="input">
               <p class="suggestion mt-1 text-end poppins-light">
                 ¿No recordás tu contraseña? Podés <a href="#forgot-password">Recuperarla</a>
               </p>
@@ -219,8 +219,62 @@
     </div>
     </section>  
     <section class="container-fluid" id="feedback" >
-      <article></article>
-      <article></article>
+      <article class="container">
+        <div class="row-flex justify-content-between align-items-center">
+          <div class="col-6 col-sm-auto">
+            <img src="" alt="Imagen de un cliente" class="client-image">
+            <blockquote class="client-opinion">Telegram Teams fue la elección correcta. Había intentado con otras apps de CRM pero ninguna fue tán fácil de utilizar y mantener.</blockquote>
+          </div>
+          <div class="col-6 col-sm-auto">
+            <img src="" alt="Imagen de un cliente" class="client-image">
+            <blockquote class="client-opinion">Antes de usar Telegram Teams me pasaba...</blockquote>
+          </div>
+        </div>
+      </article>
+      <article class="container">
+        <div class="row-flex justifify-content-between align-items-center">
+          <div class="col-12 col-md-6">
+            <h2 class="text-center py-4">Formulario de contacto</h2>
+            <img src="" alt="Persona comunicándose">
+            <p>
+              <strong>Contacta ahora a un asesor de ventas para enterarte cómo elevar el número de conversiones
+              de tu sitio web, e-commerce o tienda física de manera ágil e intuitiva.</strong><br>
+              No es necesario que tengas conociemientos previos, nuestro equipo de asesores te guiarán en
+              el proceso de llevar tus ventas al siguiente nivel.<br>
+              Puedes solicitar una demostración sin costo de <strong>Telegram Teams Pro</strong> y aprovechar
+              el kit completo de herramientas para gestionar tus ventas, o iniciar ya mismo con la versión gratuita
+              del paquete y saltar a la versión Pro cuando lo creas necesario.
+            </p>
+          </div>
+          <form class="col-12 col-md-6 py-4 mb-4 rounded" id="contact-form">
+            <div class="input-group">
+              <label for="firstName" class="input-label">Nombre</label>
+              <input type="text" name="firstName" id="firstName" class="input">
+            </div>
+            <div class="input-group">
+              <label for="lastName" class="input-label">Apellido</label>
+              <input type="text" name="lastName" id="lastName" class="input">
+            </div>
+            <div class="input-group">
+              <label for="eMail" class="input-label">E-Mail</label>
+              <input type="email" name="eMail" id="eMail" class="input">
+            </div>
+            <div class="input-group">
+              <label for="telephone" class="input-label">Teléfono</label>
+              <input type="tel" name="telephone" id="telephone" class="input">
+            </div>
+            <div class="input-group">
+              <label for="message" class="input-label">Contanos de tu negocio</label>
+              <textarea class="poppins-regular" name="message" id="message"></textarea class="input">
+              </div>
+            <div class="input-group">
+              <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
+            </div>
+            <button type="submit" class="btn btn-secondary mr-1 mb-2 mt-4">Quiero una demostración</button>
+            <button type="submit" class="btn btn-primary-outline mb-2">Iniciar Versión Free</button>
+          </form>          
+        </div>
+      </article>
     </section>
     <section class="container-fluid" id="final-arguments" >
       <article></article>
@@ -232,11 +286,11 @@
         <div class="footer-image logo col-sm-3 col-md-2">
           <img src="static/img/Imagotipo.svg" alt="logo" class="w-100 desaturated">
         </div>
-        <div class="col-12 col-md-6" id="address-info">
+        <div class="col-sm-8 col-md-6" id="address-info">
           <a href="mailto:info@telegramteams.com.ar" class="email-address"><img src="static/img/envelope.svg" alt="E-mail">info@telegramteams.com.ar</a>
-          <address><a href="https://maps.app.goo.gl/ZdauRV8Z8PLZ2JR67"><img src="static/img/geo.svg" alt=""> Torre Madero Center - Puerto Madero, CABA - Argentina</a></address>
+          <address><a href="https://maps.app.goo.gl/ZdauRV8Z8PLZ2JR67" class="address"><img src="static/img/geo.svg" alt=""> Torre Madero Center - Puerto Madero, CABA - Argentina</a></address>
         </div>
-        <nav class="nav-list col-auto text-center p-4">
+        <nav class="nav-list col-auto text-center pt-4" id="site-nav">
           <ul class="nav-items">
             <li class="nav-item pb-1"><a href="#" class="nav-link">Módulos</a></li>
             <li class="nav-item pb-1"><a href="#" class="nav-link">Precios</a></li>
@@ -244,7 +298,7 @@
             <li class="nav-item pb-1"><a href="#" class="nav-link">Ayuda</a></li>
           </ul>
         </nav>
-        <nav class="nav-list col-auto text-center p-4 align-start">
+        <nav class="nav-list col-auto text-center pt-4 align-start">
           <ul class="nav-items">
             <li class="nav-item pb-1"><a href="#" class="nav-link">Nosotros</a></li>
             <li class="nav-item pb-1"><a href="#" class="nav-link">Legales</a></li>
