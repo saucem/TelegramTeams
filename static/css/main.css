@@ -804,9 +804,160 @@ address, .email-address{
   background-color: var(--neutral-light-color);
 }
 
+/* Grupo de estilos Form de Registro*/
 
+.form-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  padding: 20px 70px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background:rgba(42,42,42 ,1);
+}
 
+.form-wrapper h2 {
+  color: #fff;
+  font-size: 3rem;
+}
 
+.form-wrapper form {
+  margin: 20px 0 10px;
+}
+
+form .form-control {
+  height: 50px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.form-control input {
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+.form-control input:is(:focus, :valid) {
+  background: #444;
+  padding: 16px 20px 0;
+}
+
+.form-control label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-130%);
+  font-size: 1rem;
+  pointer-events: none;
+  color: #8c8c8c;
+  transition: all 0.1s ease;
+}
+
+#birthdate{
+  padding:16px 20px 0px;
+}
+
+.form-control input:is(:focus, :valid)~label {
+  font-size: 1rem;
+  transform: translateY(-130%);
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid white; 
+  border-radius: 25px;
+
+}
+
+.form-select option{
+  color:#0f0e0e;
+} 
+
+form button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color:#FFF;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin: 25px 0 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+form button:hover{
+  color:var(--secondary-color)!important;
+}
+
+.form-wrapper a {
+  text-decoration: none;
+}
+
+.form-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.form-wrapper :where(label, p, small, a) {
+  color: #b3b3b3;
+}
+
+form .form-terms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+form .terms {
+  display: flex;
+}
+
+form .terms input {
+  margin-right: 5px;
+  accent-color: #b3b3b3;
+}
+
+form .form-terms :where(label, a) {
+  font-size: 1rem;
+}
+
+.form-wrapper p a {
+  color: #fff;
+}
+
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+  color: #b3b3b3;
+}
+
+.form-wrapper small a {
+  color: #0071eb;
+}
+
+.error{
+  color: red;
+  margin-bottom: 5px;
+}
+.form-control input.error, .form-select.error{
+  border: 2px solid red; 
+}
 
 
 

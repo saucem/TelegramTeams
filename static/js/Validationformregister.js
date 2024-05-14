@@ -1,5 +1,5 @@
 // Seleccionar el formulario por su ID
-const formRegistro = document.querySelector("#Registro");
+const formRegister = document.querySelector("#formRegister");
 
 // Función para limpiar las validaciones anteriores
 const clearValidations = () => {
@@ -31,23 +31,23 @@ const validarFormulario = (event) => {
     clearValidations();
 
     // Obtener referencias a los campos del formulario
-    const nombre = document.querySelector("#nombre");
-    const apellido = document.querySelector("#apellido");
+    const firstname = document.querySelector("#firstname");
+    const lastname = document.querySelector("#lastname");
     const email = document.querySelector("#email");
-    const pass = document.querySelector("#pass");
+    const password = document.querySelector("#password");
 
     let validation = true;
     // Validar el campo firstname
-    if(!nombre.value.trim()){
-        nombre.classList.add('error')
-        document.querySelector("#error-nombre").textContent='Debe completar el campo Nombre';
+    if(!firstname.value.trim()){
+        firstname.classList.add('error')
+        document.querySelector("#error-firstname").textContent='Debe completar el campo Nombre';
         validation=false;
     }
     // Validar el campo lastname
-    if(!apellido.value.trim()){
+    if(!lastname.value.trim()){
         // alert("Los campos Nombre, Apellido, Email y Password son obligatorios")
-        document.querySelector("#error-apellido").textContent='Debe completar el campo Apellido';
-        apellido.classList.add('error')
+        document.querySelector("#error-lastname").textContent='Debe completar el campo Apellido';
+        lastname.classList.add('error')
         validation=false;
     }
     // Validar el campo email
@@ -58,24 +58,22 @@ const validarFormulario = (event) => {
         validation=false;
     }
     // Validar el campo password
-    if(!pass.value.trim()){
+    if(!password.value.trim()){
         // alert("Los campos Nombre, Apellido, Email y Password son obligatorios")
-        document.querySelector("#error-pass").textContent='Debe completar el campo contraseña';
-        pass.classList.add('error')
+        document.querySelector("#error-password").textContent='Debe completar el campo contraseña';
+        password.classList.add('error')
         validation=false;
-    }else if(pass.value.length < 6 || pass.value.length > 12){
-        document.querySelector("#error-pass").textContent ='La contraseña debe contener entre 6 y 12 caracteres';
-        pass.classList.add('error')
+    }else if(password.value.length < 6 || password.value.length > 12){
+        document.querySelector("#error-password").textContent ='La contraseña debe contener entre 6 y 12 caracteres';
+        password.classList.add('error')
         validation=false;
     }
 
     // Si no hay errores de validación, enviar el formulario
     if(validation){
-        document.write("Registro exitoso")
-        formRegistro.submit()
-    } else {document.write("Error de registro")}
-
+        formRegister.submit()
+    }
 }
 
 
-formRegistro.addEventListener('submit',validarFormulario);
+formRegister.addEventListener('submit',validarFormulario);
