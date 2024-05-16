@@ -131,7 +131,7 @@ button{
 /* semantic tags styling end */
 
 /* animation keyframes start */
-@keyframes grow{0%{scale: 0;}}
+@keyframes grow{0%{transform: scale(0);}}
 
 @keyframes slide-from-top{0%{transform: translateY(-150vh);}}
 @keyframes slide-from-bottom{0%{transform: translateY(150vh);}}
@@ -142,6 +142,8 @@ button{
 @keyframes bounce-from-bottom{0%{transform: translateY(150vh);} 80%{transform: translateY(-5vh);}}
 @keyframes bounce-from-left{0%{transform: translateX(-150vw);} 80%{transform: translateX(5vw);}}
 @keyframes bounce-from-right{0%{transform: translateX(150vh);} 80%{transform: translateX(-5vw);}}
+
+@keyframes shake{0%{transform: translateX(-5px);} 25%{transform: translateX(5px);} 50%{transform: translateX(-5px);} 75%{transform: translateX(5px);} }
 /* animation keyframes end */
 
 /* modal dialog start */
@@ -767,7 +769,24 @@ address, .email-address{
     background-color: var(--neutral-light-color);
   }
 
+  .has-error{
+    animation: shake 0.3s ease 0.2s ;
+    border: 1px solid var(--danger-color);
+  }
+
+  .has-error:focus-visible{
+    outline: none;
+    border: 2px solid var(--danger-color);
+  }
+
   /* particular styling end */
+
+
+
+
+
+
+
 #PlanesyPrecios{
   color: var(--neutral-color);
   background-color: var(--secondary-light-color); 
