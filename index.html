@@ -55,7 +55,7 @@
           <p class="suggestion mt-1 text-end poppins-light">
             Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
-          <form action="" method="post" class="modal-form">
+          <form action="" method="post" class="modal-form" id="login-form">
             <div class="input-group my-4">
               <label for="user-name" class="input-label p-0">Usuario</label>
               <input type="text" name="user-name" id="user-name" class="input">
@@ -251,22 +251,22 @@
           <form class="col-12 col-md-6 py-4 mb-4 rounded" id="contact-form">
             <div class="input-group">
               <label for="firstName" class="input-label">Nombre</label>
-              <input type="text" name="firstName" id="firstName" class="input">
+              <input type="text" name="firstName" id="firstName" class="input required">
             </div>
             <div class="input-group">
               <label for="lastName" class="input-label">Apellido</label>
-              <input type="text" name="lastName" id="lastName" class="input">
+              <input type="text" name="lastName" id="lastName" class="input required">
             </div>
             <div class="input-group">
               <label for="eMail" class="input-label">E-Mail</label>
-              <input type="email" name="eMail" id="eMail" class="input">
+              <input type="email" name="eMail" id="eMail" class="input required">
             </div>
             <div class="input-group">
               <label for="telephone" class="input-label">Teléfono</label>
               <input type="tel" name="telephone" id="telephone" class="input">
             </div>
             <div class="input-group">
-              <label for="message" class="input-label">Contanos de tu negocio</label>
+              <label for="message" class="input-label">Contanos acerca de tu negocio</label>
               <textarea class="poppins-regular" name="message" id="message"></textarea class="input">
               </div>
             <div class="input-group">
@@ -331,5 +331,6 @@
     
    </div>
   </footer>
+  <script src="./static/js/formValidation.js"></script>
 </body>
 </html>
