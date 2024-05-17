@@ -58,11 +58,11 @@
           <form action="" method="post" class="modal-form" id="login-form">
             <div class="input-group my-4">
               <label for="user-name" class="input-label p-0">Usuario</label>
-              <input type="text" name="user-name" id="user-name" class="input">
+              <input type="text" name="user-name" id="user-name" class="input required">
             </div>
             <div class="input-group my-4">
               <label for="password" class="input-label p-0">Contraseña</label>
-              <input type="password" name="password" id="password" class="input">
+              <input type="password" name="password" id="password" class="input required">
               <p class="suggestion mt-1 text-end poppins-light">
                 ¿No recordás tu contraseña? Podés <a href="#forgot-password">Recuperarla</a>
               </p>
@@ -267,7 +267,7 @@
             </div>
             <div class="input-group">
               <label for="message" class="input-label">Contanos acerca de tu negocio</label>
-              <textarea class="poppins-regular required" name="message" id="message"></textarea class="input">
+              <textarea class="poppins-regular input" name="message" id="message"></textarea class="input">
               </div>
             <div class="input-group">
               <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
@@ -331,6 +331,6 @@
     
    </div>
   </footer>
-  <script src="./static/js/form-validate.js"></script>
+  <script src="./static/js/formValidation.js"></script>
 </body>
 </html>
