@@ -978,7 +978,10 @@ form .form-terms :where(label, a) {
   border: 2px solid red; 
 }
 
-
+.client-image {
+  height: 10%
+  width: 10%
+}
 
 /* Experimental develop */
 /* .row-grid{
