@@ -75,8 +75,12 @@ h1{
 }
 
 h2{
-  font-size: 1.25em;
+  font-size: 2em;
   line-height: 1em;
+}
+
+h3{
+  font-size: 1.5em;
 }
 
 a{
@@ -167,7 +171,7 @@ button{
   .modal-container{
     /* animation: grow 0.5s 0.5s backwards; */
     /* animation: slide-from-top 0.5s 0.5s backwards; */
-    animation: bounce-from-top 0.5s ease-in-out .5s backwards;
+    animation: bounce-from-top 0.5s ease-in-out .5s forwards;
   } 
 }
 
@@ -199,9 +203,6 @@ button{
   color: var(--neutral-color);
   background-color: var(--neutral-light-color);
 }
-
-/* .modal-text{color: var(--primary-color);} */
-/* modal dialog end */
 
 /* component styling start */
 .btn{
@@ -271,7 +272,9 @@ address, .email-address{
     height: 100%;
     filter: invert();
   }
-  
+}
+strong{
+  font-weight: 600;
 }
 
 /* text management end */
@@ -581,8 +584,9 @@ address, .email-address{
       .col-md-11{width: calc(100% / 12 * 11);}
       .col-md-12{width: calc(100% / 12 * 12);}
       #site-nav{border-color: transparent;}
-      /* .brand-logo{height: 8vh;}
-      main{min-height: 92vh;} */
+      h2{
+        font-size: 2.5em;
+      }
     }
 
     /* large */
@@ -657,6 +661,10 @@ address, .email-address{
 /* sizing styles end */
 
 /* margins & paddings start */
+  .m-auto{margin: auto;}
+  .mx-auto{margin: 0 auto;}
+  .my-auto{margin: auto 0;}
+
   .m-0{margin: 0em;}
   .m-1{margin: 0.25em;}
   .m-2{margin: 0.5em;}
@@ -756,9 +764,46 @@ address, .email-address{
     /* background-color: var(--neutral-color); */
     background-color: #3f3f3d;
     align-items: center;
-    h2{
-      font-size: 2.5em;
-    }
+  }
+
+  #feedback{
+    color: var(--neutral-light-color);
+    background-color: var(--neutral-color);
+  }
+  .photo-holder{
+    padding: 50px;
+    border-radius: 50px;
+    margin-right: 1em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid var(--neutral-light-color);
+  }
+
+  #profile-1{
+    background-image: url(../img/chavon_1.jpg);
+  }
+
+  #profile-2{
+    background-image: url(../img/chavona_1.jpg);
+  }
+
+  .client-opinion{
+    font-style: italic;
+  }
+  
+  .client-name{
+    color: var(--neutral-subtle-color);
+    font-style:initial;
+    font-size: 0.75em;
+  }
+
+  .contact-picture{
+    display: block;
+    padding: 30% 20%;
+    max-width: 300px;
+    background-image: url(../img/contacto.png);
+    background-size: cover;
   }
 
   .desaturated{
@@ -907,7 +952,7 @@ form .form-control {
 } 
 
 form button {
-  width: 100%;
+  /* width: 100%; */
   padding: 16px 0;
   font-size: 1rem;
   background-color: var(--primary-color);

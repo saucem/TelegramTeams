@@ -103,9 +103,9 @@
     <section class="container-fluid" id="arguments">
       <div class="container py-4">
         <div class="row-flex d-flex align-items-center">
-          <!-- <div class="col-12 col-md-6 iframe-container">
+          <div class="col-12 col-md-6 iframe-container">
             <iframe src="https://www.youtube.com/embed/cgNTtM44-Dk?si=NvdOozsj8-tQCxcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" class="responsive-iframe"></iframe>
-          </div> -->
+          </div>
           <div class="col-12 col-md-6">
             <h2 class="text-center mb-2">Por qué usar un CRM</h2>
             <p>El éxito de una empresa o negocio depende de su relación con los clientes.</p>
@@ -124,11 +124,11 @@
     </section>
 <section class="container-fluid" id="PlanesyPrecios">
   <div class="container py-4">
-    <h1 class="text-center mb-2">Planes y Precios</h1>
+    <h2 class="text-center mb-2">Planes y Precios</h2>
     <div class="row-flex">
       
       <div class="col-8 col-md-6 precios-text">
-        <h2 class="text-center mb-2">Version Gratuita</h2>
+        <h3 class="text-center mb-2">Version Gratuita</h3>
         <br>
         <h4>Para empresas en crecimiento.</h4>
         <p>
@@ -140,7 +140,7 @@
         <a href="./FormRegistro.html"class="btn btn-secondary my-4">Contratar></a>
       </div>
       <div class="col-4 col-md-6 precios-text">
-        <h2>Version Premium</h2>
+        <h3>Version Premium</h3>
         <br>
         <h4>Para grandes empresas que manejan muchos leads
         </h4>
@@ -194,10 +194,10 @@
     </section>
     <section class="container-fluid" id="Modulos">
       <div class="container">
-        <h1 class="text-center mb-2">Módulos</h1>
+        <h2 class="text-center mb-2">Módulos</h2>
         <div class="row-flex">   
           <div class="col-8 col-md-6 modulo-text">
-                <h2>Whatsapp CRM para ventas</h2>
+                <h3>Whatsapp CRM para ventas</h3>
                 <br>
                 <p>
                 Centraliza tus conversaciones con clientes en un solo lugar. <br>
@@ -207,7 +207,7 @@
                 <button class="btn btn-secondary my-4">Cómo funciona</button>
           </div>
           <div class="col-4 col-md-6 modulo-text"> 
-                <h2>Analytics</h2>
+                <h3>Analytics</h3>
                 <br>
                 <p>
                 Obtén métricas de tus conversaciones y atención de agentes. Potencia tu fidelización con la mejora de tu servicio basada en datos.
@@ -221,24 +221,34 @@
     </div>
     </section>  
     <section class="container-fluid" id="feedback" >
-      <article class="container">
+      <article class="container my-4">
         <div class="row-flex justify-content-between align-items-center">
-          <div class="col-6 col-sm-auto">
-            <img src="./static/img/chavon 1.jpg" width="10%" height="10%" alt="Imagen de un cliente" class="client-image">
-            <blockquote class="client-opinion">Telegram Teams fue la elección correcta. Había intentado con otras apps de CRM pero ninguna fue tán fácil de utilizar y mantener.</blockquote>
+          <div class="col-6 col-sm-auto d-flex align-items-center">
+            <!-- <img src="./static/img/chavon 1.jpg" alt="Imagen de un cliente" class="client-image"> -->
+            <div class="photo-holder" id="profile-1"></div>
+            <blockquote class="client-opinion">
+              "Telegram Teams fue la elección correcta. Había intentado con otras apps de CRM pero ninguna fue tan fácil de utilizar y mantener."<br>
+              <span class="client-name">Martín Heiss, Empretienda</span>
+            </blockquote>
           </div>
-          <div class="col-6 col-sm-auto"> <!-- width="10%" height="10%" -->
-            <img src="./static/img/chavona 1.jpg" width="10%" height="10%" alt="Imagen de un cliente" class="client-image">
-            <blockquote class="client-opinion">Antes de usar Telegram Teams me pasaba...</blockquote>
+          <div class="col-6 col-sm-auto d-flex align-items-center">
+            <!-- <img src="./static/img/chavona 1.jpg" alt="Imagen de un cliente" class="client-image"> -->
+            <div class="photo-holder" id="profile-2"></div>
+            <blockquote class="client-opinion">
+              "Antes de usar Telegram Teams guardábamos la info en planillas de cálculo engorrosas y difíciles de actualizar. Ahora todo resulta más simple."<br>
+              <span class="client-name">Pilar Navarro, Lady Stork</span>
+            </blockquote>
           </div>
         </div>
       </article>
       <article class="container">
-        <div class="row-flex justifify-content-between align-items-center">
-          <div class="col-12 col-md-6">
+        <div class="row-flex justify-content-center align-items-center">
+          <div class="col-12">
             <h2 class="text-center py-4">Formulario de contacto</h2>
-            <img src="" alt="Persona comunicándose">
-            <p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="contact-picture m-auto"></div>
+            <p class="pt-2 pb-4">
               <strong>Contacta ahora a un asesor de ventas para enterarte cómo elevar el número de conversiones
               de tu sitio web, e-commerce o tienda física de manera ágil e intuitiva.</strong><br>
               No es necesario que tengas conocimientos previos, nuestro equipo de asesores te guiarán en
@@ -248,7 +258,7 @@
               del paquete y saltar a la versión Pro cuando lo creas necesario.
             </p>
           </div>
-          <form class="col-12 col-md-6 py-4 mb-4 rounded" id="contact-form">
+          <form class="col-12 col-md-6 col-xl-4 py-4 mb-4 rounded" id="contact-form">
             <div class="input-group">
               <label for="firstName" class="input-label">Nombre</label>
               <input type="text" name="firstName" id="firstName" class="input required">
@@ -273,7 +283,7 @@
               <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
             </div>
             <button type="submit" class="btn btn-secondary mr-1 mb-2 mt-4">Quiero una demostración</button>
-            <button type="submit" class="btn btn-primary-outline mb-2">Iniciar Versión Free</button>
+            <!-- <button type="submit" class="btn btn-primary-outline mb-2">Iniciar Versión Free</button> -->
           </form>          
         </div>
       </article>
