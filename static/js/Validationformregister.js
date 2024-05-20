@@ -1,6 +1,5 @@
 // Seleccionar el formulario por su ID
 const formRegister = document.querySelector("#formRegister");
-alert("VAMOS A VALIDAR");
 // Función para limpiar las validaciones anteriores
 const clearValidations = () => {
     // Seleccionar todos los campos de entrada y elementos de error

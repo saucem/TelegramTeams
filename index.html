@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="static/img/Isotipo.png" type="image/x-icon">
   <title>Telegram Teams | Inicio</title>
 </head>
 <body class="poppins-regular">
@@ -41,7 +42,7 @@
           </label>
         </li>
         <li class="cta d-none d-sm-inblock">
-          <a href="#" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
+          <a href="registroV2.html" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
           <a href="#login" class="btn btn-neutral-outline">Iniciar sesión</a>
         </li>
       </ul>
@@ -61,7 +62,7 @@
             Podes utilizar tus credenciales para iniciar sesión
           </p>
           <p class="suggestion mt-1 text-end poppins-light">
-            Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
+            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
           </p>
           <form action="" method="post" class="modal-form" id="login-form">
             <div class="input-group my-4">
@@ -72,12 +73,41 @@
               <label for="password" class="input-label p-0">Contraseña</label>
               <input type="password" name="password" id="password" class="input required">
               <p class="suggestion mt-1 text-end poppins-light">
-                ¿No recordás tu contraseña? Podés <a href="#forgot-password">Recuperarla</a>
+                ¿No recordás tu contraseña? Podés <a href="#password-recovery">Recuperarla</a>
               </p>
             </div>
             <div class="row-flex justify-content-end">
-              <a href="#header" class="btn btn-neutral-outline m-1" id="dismiss-modal">Cancelar</a>
+              <a href="#header" class="btn btn-neutral-outline m-1 dismiss-modal">Cancelar</a>
               <button type="submit" class="btn btn-primary m-1">Ingresar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="password-recovery">
+      <div class="modal-background">
+        <div class="modal-container" id="password-recovery-container">
+          <header class="modal-header">
+            <figure class="col-8">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
+            <h2 class="col-12 text-center">Recuperar contraseña</h2>
+          </header>
+          <p class="modal-text">
+            Ingresá el correo electrónico con el que te registraste. Te enviaremos un link para que puedas restablecer la contraseña e ingresar a la plataforma.
+          </p>
+          <p class="suggestion mt-1 text-end poppins-light">
+            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
+          </p>
+          <form action="" method="post" class="modal-form" id="password-recovery-form">
+            <div class="input-group my-4">
+              <label for="user-email" class="input-label p-0">Correo electrónico</label>
+              <input type="email" name="user-email" id="user-email" class="input required">
+            </div>
+            <div class="row-flex justify-content-end">
+              <a href="#login" class="btn btn-neutral-outline m-1 dismiss-modal">Cancelar</a>
+              <button type="submit" class="btn btn-primary m-1">Enviar link</button>
             </div>
           </form>
         </div>
@@ -129,7 +159,7 @@
       <div class="modal-background">
         <div class="modal-container" id="us-container">
           <header class="modal-header">
-            <figure class="col-4">
+            <figure class="col-6">
               <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
             </figure>
             <h2 class="col-12 text-center">Nosotros</h2>
@@ -211,7 +241,7 @@
               de mensajería con la potencia de Python<span class="copy">&trade;</span> y la solidez de MySQL<span class="copy">&trade;</span>
               para ayudar a los equipos de trabajo a potenciar las ventas, afianzando la relación con el cliente y aumentando la tasa de conversión.
             </p>
-            <button class="btn btn-secondary my-4">Comenzar ahora</button>
+            <a href="registroV2.html" class="btn btn-secondary my-4">Comenzar ahora</a>
           </div>
         </div>
       </div>
@@ -233,7 +263,7 @@
               <li class="list-item">Dar seguimiento a tus prospectos antes de que compren en otro lugar.</li>
               <li class="list-item">Obtener información clara y precisa, organizada para optimizar la productividad.</li>
             </ul>
-            <a href="" class="btn btn-primary">Solicitar Demo</a>
+            <a href="#contact-form" class="btn btn-primary">Solicitar Demo</a>
           </div>
         </div>
       </div>
