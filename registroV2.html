@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Formulario de contacto</title>
+    
+</head>
+<body class="poppins-regular" >
+
+    <div  class="container-fluid" id="Registro">
+        <div class="row-flex">
+            <img src="static/img/imagotipo.png" alt="logo" class="w-30">
+        </div>
+        
+        <section class="form-wrapper">
+            <h2>Registro</h2>
+
+            <form action="#" id="formRegister" method="GET" novalidate>
+                <div class="form-control">
+                <label>Nombre</label>
+                <input type="text" required name="firstname" id="firstname" >
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                <label>Apellido</label>
+                <input type="text" required name="lastname" id="lastname">
+                </div>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                <label>Email</label>
+                <input type="email" required name="email" id="email">
+                </div>
+                <div class="error" id="error-email"></div>
+                <div class="form-control">
+                <label>Contraseña</label>
+                <input type="password" required name="password" id="password">
+                </div>
+                <div class="error" id="error-password"></div>
+                <div class="form-control">
+                <label id="label-birthdate">Fecha de Nacimiento</label>
+                <input type="date" required name="birthdate" id="birthdate">
+                </div>
+                <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                    <option value="">País</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <div class="form-terms"> 
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                </div>
+            <button type="submit" class="w-100" id="btn-send">Registrarse</button>
+            </form>
+        </section>
+    </div>    
+    <script src="./static/js/Validationformregister.js"></script>
+</body>
+</html>
