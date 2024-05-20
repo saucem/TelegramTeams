@@ -171,8 +171,8 @@ button{
   .modal-container{
     /* animation: grow 0.5s 0.5s backwards; */
     /* animation: slide-from-top 0.5s 0.5s backwards; */
-    animation: bounce-from-top 0.5s ease-in-out .5s forwards;
-  } 
+    animation: bounce-from-top 0.5s ease-in-out .5s backwards;
+  }
 }
 
 .modal-header{
@@ -196,12 +196,28 @@ button{
 
 .modal-container{
   width: 80%;
-  max-width: 400px;
+  max-width: 600px;
+  max-height: 90vh;
   margin: auto;
   padding: 2em;
   border-radius: 1em;
   color: var(--neutral-color);
   background-color: var(--neutral-light-color);
+  &#login-container{
+    max-width: 400px;
+  }
+  &#legal-container{
+    max-width: 800px;
+    scroll-behavior: smooth;
+  }
+  &#us-container{
+    max-width: 600px;
+  }
+}
+
+.modal-body{
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 /* component styling start */
@@ -267,10 +283,11 @@ address, .email-address{
 }
 .social-link{
   line-height: 1.5em;
+  vertical-align: middle;
   padding: 0.25em;
   & .social-link-image{
     height: 100%;
-    filter: invert();
+    vertical-align: middle;
   }
 }
 strong{
@@ -773,7 +790,6 @@ strong{
   .photo-holder{
     padding: 50px;
     border-radius: 50px;
-    margin-right: 1em;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -787,6 +803,28 @@ strong{
   #profile-2{
     background-image: url(../img/chavona_1.jpg);
   }
+
+  .profile-img{
+    padding: 10%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #daniela{
+    background-image: url(../img/daniela.jpg);
+  }
+  #fernando{
+    background-image: url(../img/fernando.jpg);
+  }
+  #gabriela{
+    background-image: url(../img/gabriela.jpg);
+  }
+  #mauro{
+    background-image: url(../img/mauro.jpg);
+  }
+
 
   .client-opinion{
     font-style: italic;
@@ -804,6 +842,10 @@ strong{
     max-width: 300px;
     background-image: url(../img/contacto.png);
     background-size: cover;
+  }
+
+  .inverted{
+    filter: invert();
   }
 
   .desaturated{

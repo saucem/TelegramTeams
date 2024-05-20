@@ -36,7 +36,9 @@ const validate = (event) => {
     }
   }
   if (!foundError){
-    currentForm.submit();
+    swal("Ingreso exitoso!", "Los datos se cargaron correctamente.");
+    //currentForm.submit();
+    document.getElementById("dismiss-modal").click();
   }
 }
 
