@@ -8,8 +8,8 @@
     
 </head>
 <body class="poppins-regular" >
-    <div class="modal-background">
-        <div class="modal-container">
+    <div class="modal-background-2">
+        <div class="modal-container2">
           <header class="modal-header">
             <figure class="col-8">
               <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
@@ -23,27 +23,27 @@
                         <input type="text" required name="firstname" id="firstname" class="input" >
                     </div>
                     <div class="error" id="error-firstname"></div>
-                    <div class="form-control">
-                    <label>Apellido</label>
-                    <input type="text" required name="lastname" id="lastname">
+                    <div class="input-group mt-4>">
+                    <label for="lastname" class="input-label">Apellido</label>
+                    <input type="text" required name="lastname" id="lastname" class="input">
                     </div>
                     <div class="error" id="error-lastname"></div>
-                    <div class="form-control">
-                    <label>Email</label>
-                    <input type="email" required name="email" id="email">
+                    <div class="input-group mt-4>">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="email" required name="email" id="email" class="input">
                     </div>
                     <div class="error" id="error-email"></div>
-                    <div class="form-control">
-                    <label>Contraseña</label>
-                    <input type="password" required name="password" id="password">
+                    <div class="input-group mt-4>">
+                    <label for="password" class="input-label">Contraseña</label>
+                    <input type="password" required name="password" id="password" class="input">
                     </div>
                     <div class="error" id="error-password"></div>
-                    <div class="form-control">
-                    <label id="label-birthdate">Fecha de Nacimiento</label>
-                    <input type="date" required name="birthdate" id="birthdate">
+                    <div class="input-group mt-4>">
+                    <label for="label-birthdate" class="input-label">Fecha de Nacimiento</label>
+                    <input type="date" required name="birthdate" id="birthdate" class="input">
                     </div>
-                    <div class="form-control">
-                        <select name="country" id="country" class="form-select">
+                    <div class="input-group mt-4>">
+                        <select name="country" id="country" class="input">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -57,8 +57,8 @@
                         <option value="VE">Venezuela</option>
                         </select>
                     </div>
-                    <div class="form-control">
-                        <Label>Foto de perfil</Label>
+                    <div class="input-group mt-4>">
+                        <Label for="captura" class="input-label">Foto de perfil</Label>
                         <input type="file" name="Imagen" id="captura">
                     </div>
                     <br>
@@ -68,7 +68,7 @@
                         <label for="terms">Acepto términos y condiciones</label>
                     </div>
                 </div>
-            <button type="submit" class="w-100" id="btn-send">Registrarse</button>
+            <button type="submit" class="btn btn-primary w-100" id="btn-send">Registrarse</button>
             </form>
         </section>
     </div>    
