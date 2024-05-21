@@ -789,20 +789,41 @@ address, .email-address{
 
 #PlanesyPrecios{
   color: var(--neutral-color);
-  background-color: var(--secondary-light-color); 
+  background-color: var(--secondary-light-color);
+  align-items: center; 
 }
 
 .precios-text p{
   line-height: 1.25em;
+  align-items: center;
 }
+
+.card{
+  color: var(--neutral-light-color); background-color: var(--secondary-color); align-items: center;
+}
+
+.card2{
+ border:15px solid #2aabee; color: var(--neutral-light-color); background-color: #2aabee ;   align-items: center; padding: 20px;
+}
+
+/* --primary-color: #0778b4;
+--primary-subtle-color: #2aabee;
+--primary-light-color: #b7e6ff;
+--primary-dark-color: #0449A0; */
+
+
 #Modulos{
+  
   color: var(--neutral-color);
   background-color: var(--primary-light-color);
-  }
+  flex-direction: row;
+ 
+ 
+}
 
 #Registro{
-  color: var(--neutral-light-color);
-  background-color: var(--neutral-color);
+  /* color: var(--neutral-light-color);
+  background-color: var(--neutral-color); */
   font-size: 15px;
   position:relative;
   min-width: 320px;
@@ -814,7 +835,13 @@ address, .email-address{
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--neutral-light-color);
-
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color)
   
 }
 
@@ -833,16 +860,18 @@ address, .email-address{
   padding: 20px 70px;
   width: 500px;
   transform: translate(-50%, -50%);
-  background:rgba(42,42,42 ,1);
+  background:var(--neutral-dark-color);
 }
 
 .form-wrapper h2 {
-  color: #fff;
+  color: var(--neutral-light-color);
   font-size: 3rem;
 }
 
 .form-wrapper form {
   margin: 20px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 form .form-control {
@@ -855,7 +884,7 @@ form .form-control {
   height: 100%;
   width: 100%;
   background: rgba(255,255,255,0.1);
-  border: 2px solid white;
+  border: 2px solid --neutral-dark-color;
   outline: none;
   border-radius: 25px;
   color: #fff;
@@ -895,9 +924,9 @@ form .form-control {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color: var(--neutral-dark-color);
   background: rgba(255,255,255,0.1);
-  border: 2px solid white; 
+  border: 2px solid --neutral-dark-color; 
   border-radius: 25px;
 
 }
