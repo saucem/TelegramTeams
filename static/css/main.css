@@ -11,7 +11,7 @@
     --secondary-light-color: #E1FBCC;
     --secondary-dark-color: #009C70;
     --neutral-color: #313638;
-    --neutral-subtle-color: #d1d4c7;
+    --neutral-subtle-color: #c2c4b9;
     --neutral-light-color: #fbfcf7;
     --neutral-dark-color: #1d1d1c;
     --danger-color: #dc3545;
@@ -21,9 +21,16 @@
     --warning-color: #ffc107;
     --warning-subtle-color: #ffe69c;
     --warning-light-color: #fff3cd;
+
     --warning-dark-color: #ffb007;
-  /* color system end */
 }
+
+.bg-neutral-light{
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color);
+}
+
+  /* color system end */
 
 *{
   margin: 0px;
@@ -119,7 +126,7 @@ p.suggestion{
 }
 
 input{
-  vertical-align: initial;
+  vertical-align: middle;
 }
 
 .input, textarea{
@@ -275,6 +282,7 @@ button{
 .text-start{text-align: start;}
 .text-center{text-align: center;}
 .text-end{text-align: end;}
+.text-small{font-size: 0.75em;}
 .copy{vertical-align: 15%; font-size: .75em;}
 address{font-size: 0.7em;}
 address, .email-address{
@@ -297,7 +305,6 @@ address, .email-address{
 strong{
   font-weight: 600;
 }
-
 /* text management end */
 
 /* grid system start */
@@ -417,6 +424,9 @@ strong{
 /* navigation styles end */
 
 /* wrappers styling start */
+  #cta-text{
+    margin: 1em auto;
+  }
   
   #site-nav{
     border-right: 2px solid var(--neutral-color);
@@ -611,6 +621,10 @@ strong{
       h2{
         font-size: 2.5em;
       }
+      #cta-text{
+        max-height: 18em;
+        margin: 4em auto;
+      }
     }
 
     /* large */
@@ -633,12 +647,10 @@ strong{
       .col-lg-11{width: calc(100% / 12 * 11);}
       .col-lg-12{width: calc(100% / 12 * 12);}
       #hero{min-height: 30vh;}
-      /* .brand-logo{height: 10vh;} */
-      /* main{min-height: 90vh;}
-      section#banner{
-        min-height: 90vh;
-        background-position: top right;
-      } */
+
+      #cta-text{
+        max-height: 23em;
+      }
     }
 
     /* x-large */
@@ -843,7 +855,6 @@ strong{
   }
 
   .contact-picture{
-    display: block;
     padding: 30% 20%;
     max-width: 300px;
     background-image: url(../img/contacting.png);
