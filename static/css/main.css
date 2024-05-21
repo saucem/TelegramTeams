@@ -11,7 +11,7 @@
     --secondary-light-color: #E1FBCC;
     --secondary-dark-color: #009C70;
     --neutral-color: #313638;
-    --neutral-subtle-color: #d1d4c7;
+    --neutral-subtle-color: #c2c4b9;
     --neutral-light-color: #fbfcf7;
     --neutral-dark-color: #1d1d1c;
     --danger-color: #dc3545;
@@ -21,9 +21,16 @@
     --warning-color: #ffc107;
     --warning-subtle-color: #ffe69c;
     --warning-light-color: #fff3cd;
+
     --warning-dark-color: #ffb007;
-  /* color system end */
 }
+
+.bg-neutral-light{
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color);
+}
+
+  /* color system end */
 
 *{
   margin: 0px;
@@ -56,7 +63,7 @@ header{
 } */
 
 section#hero{
-  background-image: linear-gradient(0deg, rgba(0,0,0,.65) 33%, rgba(0,0,0,0) 100%), url('../img/team.jpg');
+  background-image: linear-gradient(0deg, rgba(0,0,0,.65) 33%, rgba(0,0,0,0) 100%), url('../img/team_at_work.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,7 +126,7 @@ p.suggestion{
 }
 
 input{
-  vertical-align: initial;
+  vertical-align: middle;
 }
 
 .input, textarea{
@@ -234,6 +241,7 @@ button{
   font-size: 1rem;
   text-wrap: nowrap;
   text-decoration: none;
+  text-align: center;
   transition: all 250ms ease;
 }
 
@@ -274,6 +282,7 @@ button{
 .text-start{text-align: start;}
 .text-center{text-align: center;}
 .text-end{text-align: end;}
+.text-small{font-size: 0.75em;}
 .copy{vertical-align: 15%; font-size: .75em;}
 address{font-size: 0.7em;}
 address, .email-address{
@@ -296,7 +305,6 @@ address, .email-address{
 strong{
   font-weight: 600;
 }
-
 /* text management end */
 
 /* grid system start */
@@ -337,6 +345,8 @@ strong{
       position: relative;
       display: inline-block;
       color: var(--neutral-color);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
       border-bottom: 2px transparent solid;
       transition: all 200ms ease;
       &:hover{
@@ -372,7 +382,8 @@ strong{
   & .nav-items{
     list-style: none;
     & .nav-link{
-      /* color: var(--neutral-subtle-color); */
+      font-family: "Poppins";
+      font-weight: 600;
       border-bottom: 2px solid transparent;
       transition: all 0.3s ease;
       &:hover{
@@ -413,6 +424,9 @@ strong{
 /* navigation styles end */
 
 /* wrappers styling start */
+  #cta-text{
+    margin: 1em auto;
+  }
   
   #site-nav{
     border-right: 2px solid var(--neutral-color);
@@ -607,6 +621,10 @@ strong{
       h2{
         font-size: 2.5em;
       }
+      #cta-text{
+        max-height: 18em;
+        margin: 4em auto;
+      }
     }
 
     /* large */
@@ -629,12 +647,10 @@ strong{
       .col-lg-11{width: calc(100% / 12 * 11);}
       .col-lg-12{width: calc(100% / 12 * 12);}
       #hero{min-height: 30vh;}
-      /* .brand-logo{height: 10vh;} */
-      /* main{min-height: 90vh;}
-      section#banner{
-        min-height: 90vh;
-        background-position: top right;
-      } */
+
+      #cta-text{
+        max-height: 23em;
+      }
     }
 
     /* x-large */
@@ -781,7 +797,6 @@ strong{
 /* particular styling start */
   #arguments{
     color: var(--neutral-light-color);
-    /* background-color: var(--neutral-color); */
     background-color: #3f3f3d;
     align-items: center;
   }
@@ -800,11 +815,11 @@ strong{
   }
 
   #profile-1{
-    background-image: url(../img/chavon_1.jpg);
+    background-image: url(../img/user_1.jpg);
   }
 
   #profile-2{
-    background-image: url(../img/chavona_1.jpg);
+    background-image: url(../img/user_2.jpg);
   }
 
   .profile-img{
@@ -840,10 +855,9 @@ strong{
   }
 
   .contact-picture{
-    display: block;
     padding: 30% 20%;
     max-width: 300px;
-    background-image: url(../img/contacto.png);
+    background-image: url(../img/contacting.png);
     background-size: cover;
   }
 
@@ -879,20 +893,41 @@ strong{
 
 #PlanesyPrecios{
   color: var(--neutral-color);
-  background-color: var(--secondary-light-color); 
+  background-color: var(--secondary-light-color);
+  align-items: center; 
 }
 
 .precios-text p{
   line-height: 1.25em;
+  align-items: center;
 }
+
+.card{
+  color: var(--neutral-light-color); background-color: var(--secondary-color); align-items: center;
+}
+
+.card2{
+ border:15px solid #2aabee; color: var(--neutral-light-color); background-color: #2aabee ;   align-items: center; padding: 20px;
+}
+
+/* --primary-color: #0778b4;
+--primary-subtle-color: #2aabee;
+--primary-light-color: #b7e6ff;
+--primary-dark-color: #0449A0; */
+
+
 #Modulos{
+  
   color: var(--neutral-color);
   background-color: var(--primary-light-color);
-  }
+  flex-direction: row;
+ 
+ 
+}
 
 #Registro{
-  color: var(--neutral-light-color);
-  background-color: var(--neutral-color);
+  /* color: var(--neutral-light-color);
+  background-color: var(--neutral-color); */
   font-size: 15px;
   position:relative;
   min-width: 320px;
@@ -904,7 +939,13 @@ strong{
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--neutral-light-color);
-
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color)
   
 }
 
@@ -923,16 +964,18 @@ strong{
   padding: 20px 70px;
   width: 500px;
   transform: translate(-50%, -50%);
-  background:rgba(42,42,42 ,1);
+  background:var(--neutral-dark-color);
 }
 
 .form-wrapper h2 {
-  color: #fff;
+  color: var(--neutral-light-color);
   font-size: 3rem;
 }
 
 .form-wrapper form {
   margin: 20px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 form .form-control {
@@ -945,7 +988,7 @@ form .form-control {
   height: 100%;
   width: 100%;
   background: rgba(255,255,255,0.1);
-  border: 2px solid white;
+  border: 2px solid --neutral-dark-color;
   outline: none;
   border-radius: 25px;
   color: #fff;
@@ -985,9 +1028,9 @@ form .form-control {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color: var(--neutral-dark-color);
   background: rgba(255,255,255,0.1);
-  border: 2px solid white; 
+  border: 2px solid --neutral-dark-color; 
   border-radius: 25px;
 
 }
@@ -1012,7 +1055,7 @@ form button {
 }
 
 form button:hover{
-  color:var(--secondary-color)!important;
+  /* color:var(--secondary-color)!important; */
 }
 
 .form-wrapper a {
