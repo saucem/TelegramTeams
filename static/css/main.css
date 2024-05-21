@@ -56,7 +56,7 @@ header{
 } */
 
 section#hero{
-  background-image: linear-gradient(0deg, rgba(0,0,0,.65) 33%, rgba(0,0,0,0) 100%), url('../img/team.jpg');
+  background-image: linear-gradient(0deg, rgba(0,0,0,.65) 33%, rgba(0,0,0,0) 100%), url('../img/team_at_work.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,6 +338,8 @@ strong{
       position: relative;
       display: inline-block;
       color: var(--neutral-color);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
       border-bottom: 2px transparent solid;
       transition: all 200ms ease;
       &:hover{
@@ -373,7 +375,8 @@ strong{
   & .nav-items{
     list-style: none;
     & .nav-link{
-      /* color: var(--neutral-subtle-color); */
+      font-family: "Poppins";
+      font-weight: 600;
       border-bottom: 2px solid transparent;
       transition: all 0.3s ease;
       &:hover{
@@ -782,7 +785,6 @@ strong{
 /* particular styling start */
   #arguments{
     color: var(--neutral-light-color);
-    /* background-color: var(--neutral-color); */
     background-color: #3f3f3d;
     align-items: center;
   }
@@ -801,11 +803,11 @@ strong{
   }
 
   #profile-1{
-    background-image: url(../img/chavon_1.jpg);
+    background-image: url(../img/user_1.jpg);
   }
 
   #profile-2{
-    background-image: url(../img/chavona_1.jpg);
+    background-image: url(../img/user_2.jpg);
   }
 
   .profile-img{
@@ -844,7 +846,7 @@ strong{
     display: block;
     padding: 30% 20%;
     max-width: 300px;
-    background-image: url(../img/contacto.png);
+    background-image: url(../img/contacting.png);
     background-size: cover;
   }
 
@@ -1042,7 +1044,7 @@ form button {
 }
 
 form button:hover{
-  color:var(--secondary-color)!important;
+  /* color:var(--secondary-color)!important; */
 }
 
 .form-wrapper a {
