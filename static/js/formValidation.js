@@ -36,7 +36,13 @@ const validate = (event) => {
     }
   }
   if (!foundError){
-    currentForm.submit();
+    if (currentForm.id === "password-recovery-form"){
+      swal("¡Enviado!", "Revisa las instrucciones en el correo que te enviamos para poder restablecer tu contraseña y volver a iniciar sesión.");
+    } else {
+      swal("¡Ingresaste a la plataforma!", "Ya podés comenzar a generar ventas.");
+    }
+    //currentForm.submit();
+    currentForm.querySelector(".dismiss-modal").click();
   }
 }
 

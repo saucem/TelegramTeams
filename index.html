@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="static/img/Isotipo.png" type="image/x-icon">
   <title>Telegram Teams | Inicio</title>
 </head>
 <body class="poppins-regular">
@@ -22,10 +23,18 @@
             <img src="static/img/imagotipo.png" alt="Logo" class="brand-logo d-none d-sm-inblock">
           </a>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Módulos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Precios</a></li>
-        <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Soporte</a></li>
-        <li class="nav-item"><a href="#" class="nav-link poppins-semibold">Ayuda</a></li>
+        <li class="nav-item">
+          <a href="#Modulos" class="nav-link poppins-semibold">Módulos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#PlanesyPrecios" class="nav-link poppins-semibold">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link poppins-semibold">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link poppins-semibold">Ayuda</a>
+        </li>
         <li class="collapse-toggler">
           <label for="toggler" class="icon-toggler">
             <img src="static/img/list.svg" alt="Open menu" id="icon-list">
@@ -33,16 +42,16 @@
           </label>
         </li>
         <li class="cta d-none d-sm-inblock">
-          <a href="#" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
-          <a href="#modal" class="btn btn-neutral-outline">Iniciar sesión</a>
+          <a href="registroV2.html" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
+          <a href="#login" class="btn btn-neutral-outline">Iniciar sesión</a>
         </li>
       </ul>
     </nav>
   </header>  
   <main>
-    <section class="modal" id="modal">
+    <section class="modal" id="login">
       <div class="modal-background">
-        <div class="modal-container">
+        <div class="modal-container" id="login-container">
           <header class="modal-header">
             <figure class="col-8">
               <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
@@ -53,7 +62,7 @@
             Podes utilizar tus credenciales para iniciar sesión
           </p>
           <p class="suggestion mt-1 text-end poppins-light">
-            Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
+            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
           </p>
           <form action="" method="post" class="modal-form" id="login-form">
             <div class="input-group my-4">
@@ -64,21 +73,158 @@
               <label for="password" class="input-label p-0">Contraseña</label>
               <input type="password" name="password" id="password" class="input required">
               <p class="suggestion mt-1 text-end poppins-light">
-                ¿No recordás tu contraseña? Podés <a href="#forgot-password">Recuperarla</a>
+                ¿No recordás tu contraseña? Podés <a href="#password-recovery">Recuperarla</a>
               </p>
             </div>
             <div class="row-flex justify-content-end">
-              <a href="#header" class="btn btn-neutral-outline m-1" id="dismiss-modal">Cancelar</a>
+              <a href="#header" class="btn btn-neutral-outline m-1 dismiss-modal">Cancelar</a>
               <button type="submit" class="btn btn-primary m-1">Ingresar</button>
             </div>
           </form>
         </div>
       </div>
     </section>
+
+    <section class="modal" id="password-recovery">
+      <div class="modal-background">
+        <div class="modal-container" id="password-recovery-container">
+          <header class="modal-header">
+            <figure class="col-8">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
+            <h2 class="col-12 text-center">Recuperar contraseña</h2>
+          </header>
+          <p class="modal-text">
+            Ingresá el correo electrónico con el que te registraste. Te enviaremos un link para que puedas restablecer la contraseña e ingresar a la plataforma.
+          </p>
+          <p class="suggestion mt-1 text-end poppins-light">
+            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
+          </p>
+          <form action="" method="post" class="modal-form" id="password-recovery-form">
+            <div class="input-group my-4">
+              <label for="user-email" class="input-label p-0">Correo electrónico</label>
+              <input type="email" name="user-email" id="user-email" class="input required">
+            </div>
+            <div class="row-flex justify-content-end">
+              <a href="#login" class="btn btn-neutral-outline m-1 dismiss-modal">Cancelar</a>
+              <button type="submit" class="btn btn-primary m-1">Enviar link</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="legal">
+      <div class="modal-background">
+        <div class="modal-container" id="legal-container">
+          <header class="modal-header">
+            <figure class="col-2">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
+            <h2 class="col-12 text-center">Legales</h2>
+          </header>
+          <div class="modal-body">
+            <h3>Política de Privacidad</h3>
+            <p class="suggestion mb-2">Última actualización: Abril 2024.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quaerat pariatur. Quaerat quibusdam optio laborum, incidunt obcaecati quae magni porro eum fuga illo quisquam ab sunt ipsa harum tempora in?
+            Corporis inventore id impedit commodi sed, adipisci amet consectetur, dolor quis distinctio quam obcaecati repellat. Architecto necessitatibus hic, cumque nulla, fuga beatae non itaque sapiente ab voluptatibus omnis cum amet?
+            Eum laudantium omnis ut perspiciatis cupiditate quo saepe doloribus adipisci eveniet consectetur nemo cumque repudiandae quidem esse id debitis pariatur mollitia, voluptatem neque earum, praesentium sint excepturi consequuntur? Commodi, sint.
+            Cum ut tempora est incidunt nam repellat veniam aliquam modi vel sit. Tenetur temporibus reiciendis atque dolorum qui dolorem ratione consequatur expedita delectus provident animi sint iusto, tempora nulla nemo?</p>
+            <div class="line neutral-subtle my-2"></div>
+            <h3>Política de Cookies </h3>
+            <p class="suggestion mb-2">Última actualización: Enero 2024.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quaerat pariatur. Quaerat quibusdam optio laborum, incidunt obcaecati quae magni porro eum fuga illo quisquam ab sunt ipsa harum tempora in?
+            Corporis inventore id impedit commodi sed, adipisci amet consectetur, dolor quis distinctio quam obcaecati repellat. Architecto necessitatibus hic, cumque nulla, fuga beatae non itaque sapiente ab voluptatibus omnis cum amet?
+            Eum laudantium omnis ut perspiciatis cupiditate quo saepe doloribus adipisci eveniet consectetur nemo cumque repudiandae quidem esse id debitis pariatur mollitia, voluptatem neque earum, praesentium sint excepturi consequuntur? Commodi, sint.
+            Cum ut tempora est incidunt nam repellat veniam aliquam modi vel sit. Tenetur temporibus reiciendis atque dolorum qui dolorem ratione consequatur expedita delectus provident animi sint iusto, tempora nulla nemo?</p>
+            <div class="line neutral-subtle my-2"></div>
+            <h3>Avisos Legales </h3>
+            <p class="suggestion mb-2">Última actualización: Mayo 2024.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id aperiam facere! Eos magni explicabo quasi animi architecto placeat corporis a ipsum repellat tempore, natus veritatis reprehenderit hic dicta. Eaque!
+            Reiciendis officiis velit eius ipsam, culpa, delectus minima nisi placeat, tempore eligendi corporis alias. Ratione, repudiandae cumque error, nemo pariatur unde odio ipsam ipsa similique tempora tenetur quam illum eligendi!
+            Ducimus, officiis labore ipsam ipsa provident architecto culpa, in ab molestias laborum numquam iste minima quidem, consequatur tempore velit adipisci reiciendis. Consectetur molestias illo quasi praesentium nulla! Harum, illo et.
+            Fugit harum, non cum sint vitae, aspernatur ab quidem quae fugiat iusto, eveniet porro corrupti consectetur! Iure a pariatur, aliquid officiis similique quia magnam incidunt, delectus sunt porro minima autem.
+            Laboriosam amet iste quod ratione adipisci? Obcaecati mollitia eius, maxime adipisci quis commodi iste sequi eum culpa eveniet consequatur itaque velit blanditiis ducimus id hic quam ut ad vel exercitationem?
+            In error quia quod distinctio. Velit incidunt temporibus impedit assumenda harum non, repellendus eaque tempore? Reiciendis molestiae eligendi minus sunt exercitationem, cupiditate at, dolores id totam mollitia atque inventore quisquam!</p>
+            <p class="suggestion mt-4">Esta Política está sujeta a revisiones periódicas y la empresa puede modificarla en cualquier momento. Cuando esto ocurra, le avisaremos de cualquier cambio y le pediremos que vuelva a leer la versión más reciente de nuestra Política y que confirme su aceptación.</p> 
+          </div>
+          <div class="modal-footer text-end mt-4">
+            <a href="#contact-info" class="btn btn-neutral">Cerrar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="modal" id="us">
+      <div class="modal-background">
+        <div class="modal-container" id="us-container">
+          <header class="modal-header">
+            <figure class="col-6">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
+            <h2 class="col-12 text-center">Nosotros</h2>
+          </header>
+          <div class="modal-body row-flex justify-content-center ">
+            <div class="col-12">
+              <p>Somos el Grupo 10 de la comisión 24146 - Full Stack Python del programa Codo a Codo. Nuestro objetivo es desarrollar una plataforma CRM aprovechando los contenidos aprendidos en el curso.</p>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="profile-img mr-4" id="daniela"></div>
+              <p class="poppins-bold">Daniela Carvalho<br>
+                <span class="poppins-regular">
+                  <a href="https://www.linkedin.com/in/" class="social-link">
+                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    Ir al perfil
+                  </a>
+                </span>
+              </p>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="profile-img mr-4" id="fernando"></div>
+              <p class="poppins-bold">Fernando Meza<br>
+                <span class="poppins-regular">
+                  <a href="https://www.linkedin.com/in/fernando-meza-mdp/" class="social-link">
+                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    Ir al perfil
+                  </a>
+                </span>
+              </p>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="profile-img mr-4" id="gabriela"></div>
+              <p class="poppins-bold">Gabriela Pérez Ojeda<br>
+                <span class="poppins-regular">
+                  <a href="https://www.linkedin.com/in/gabriela-andreina-pérez-ojeda-16b775124" class="social-link">
+                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    Ir al perfil
+                  </a>
+                </span>
+              </p>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="profile-img mr-4" id="mauro"></div>
+              <p class="poppins-bold">Mauro Saucedo<br>
+                <span class="poppins-regular">
+                  <a href="https://www.linkedin.com/in/mauro-saucedo-degrafica" class="social-link">
+                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    Ir al perfil
+                  </a>
+                </span>
+              </p>
+            </div>
+
+          </div>
+          <div class="modal-footer text-end mt-4">
+            <a href="#contact-info" class="btn btn-neutral">Cerrar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="container-fluid" id="hero">
       <div class="container">
         <div class="row-flex" id="hero-logo" >
-          <img src="static/img/imagotipo.svg" alt="logo" class="w-50">
+          <img src="static/img/imagotipo.svg&sanitize=true" alt="logo" class="w-50">
         </div>
         <div class="row-flex">
           <div class="col-6" id="banner-text">
@@ -95,7 +241,7 @@
               de mensajería con la potencia de Python<span class="copy">&trade;</span> y la solidez de MySQL<span class="copy">&trade;</span>
               para ayudar a los equipos de trabajo a potenciar las ventas, afianzando la relación con el cliente y aumentando la tasa de conversión.
             </p>
-            <button class="btn btn-secondary my-4">Comenzar ahora</button>
+            <a href="registroV2.html" class="btn btn-secondary my-4">Comenzar ahora</a>
           </div>
         </div>
       </div>
@@ -117,31 +263,30 @@
               <li class="list-item">Dar seguimiento a tus prospectos antes de que compren en otro lugar.</li>
               <li class="list-item">Obtener información clara y precisa, organizada para optimizar la productividad.</li>
             </ul>
-            <a href="" class="btn btn-primary">Solicitar Demo</a>
+            <a href="#contact-form" class="btn btn-primary">Solicitar Demo</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="container-fluid" id="PlanesyPrecios">
-      <div class="container py-4">
-        <h1 class="text-center mb-2">Planes y Precios</h1>
-        <div class="row-flex justify-content-between">      
-        <div class="col-8 col-md-6 mt-4">
-          <div class="card rounded precios-text">
-            <h2 class="text-center mb-2">Version Gratuita</h2>
-            <br>
-            <h4>Para empresas en crecimiento.</h4>
-            <p>
-            Prueba Telegram Teams gratis durante 14 dias <br>
-            Descubre cómo te ayuda a impulsar las ventas por
-            </p>
-            <br>
-            <!-- <button class="btn btn-secondary my-4">Probar Ahora</button> -->
-            <a href="./FormRegistro.html"class="btn btn-primary my-4">Contratar></a>
-          </div>
-        </div>
-      <div class="col-4 col-md-6 precios-text card mt-4 px-4 rounded">
-        <h2>Version Premium</h2>
+<section class="container-fluid" id="PlanesyPrecios">
+  <div class="container py-4">
+    <h2 class="text-center mb-2">Planes y Precios</h2>
+    <div class="row-flex">
+      
+      <div class="col-8 col-md-6 precios-text">
+        <h3 class="text-center mb-2">Version Gratuita</h3>
+        <br>
+        <h4>Para empresas en crecimiento.</h4>
+        <p>
+          Prueba Telegram Teams gratis durante 14 dias <br>
+          Descubre cómo te ayuda a impulsar las ventas por
+        </p>
+        <br>
+        <!-- <button class="btn btn-secondary my-4">Probar Ahora</button> -->
+        <a href="./FormRegistro.html"class="btn btn-secondary my-4">Contratar></a>
+      </div>
+      <div class="col-4 col-md-6 precios-text">
+        <h3>Version Premium</h3>
         <br>
         <p>Transforme la experiencia de sus clientes de atracción a conversión. 
           Revolucione su CRM con características avanzadas e inteligencia</p>
@@ -194,13 +339,10 @@
     </section>
     <section class="container-fluid" id="Modulos">
       <div class="container">
-        <h1 class="text-center mb-2">Módulos</h1>
+        <h2 class="text-center mb-2">Módulos</h2>
         <div class="row-flex">   
-          <div class="col-8 col-md-6 modulo-text card2 mt-4 px-4 rounded">
-                <h2>CRM para ventas</h2>
-                <br>
-                <p>Brinda atención ágil a tus clientes potenciales y rompe récords de ventas.
-                  Es una herramienta que te brinda una gestión más efectiva.</p>
+          <div class="col-8 col-md-6 modulo-text">
+                <h3>Whatsapp CRM para ventas</h3>
                 <br>
                 <p>        
                 Centraliza tus conversaciones con clientes en un solo lugar. <br>
@@ -211,8 +353,8 @@
                 <a href="#contact-form" class="btn btn-secondary my-4">Cómo funciona</a>
                 <!-- <button class="btn btn-secondary my-4">Cómo funciona</button> -->
           </div>
-          <div class="col-4 col-md-6 modulo-text card2 mt-4 px-4 rounded"> 
-                <h2>Analytics</h2>
+          <div class="col-4 col-md-6 modulo-text"> 
+                <h3>Analytics</h3>
                 <br>
                 <p>
                   Sigue el rendimiento con informes en tiempo real y paneles personalizables.
@@ -232,24 +374,34 @@
     </div>
     </section>  
     <section class="container-fluid" id="feedback" >
-      <article class="container">
+      <article class="container my-4">
         <div class="row-flex justify-content-between align-items-center">
-          <div class="col-6 col-sm-auto">
-            <img src="./static/img/chavon 1.jpg" width="10%" height="10%" alt="Imagen de un cliente" class="client-image">
-            <blockquote class="client-opinion">Telegram Teams fue la elección correcta. Había intentado con otras apps de CRM pero ninguna fue tán fácil de utilizar y mantener.</blockquote>
+          <div class="col-6 col-sm-auto d-flex align-items-center">
+            <!-- <img src="./static/img/chavon 1.jpg" alt="Imagen de un cliente" class="client-image"> -->
+            <div class="photo-holder mr-4" id="profile-1"></div>
+            <blockquote class="client-opinion">
+              "Telegram Teams fue la elección correcta. Había intentado con otras apps de CRM pero ninguna fue tan fácil de utilizar y mantener."<br>
+              <span class="client-name">Martín Heiss, Empretienda</span>
+            </blockquote>
           </div>
-          <div class="col-6 col-sm-auto"> <!-- width="10%" height="10%" -->
-            <img src="./static/img/chavona 1.jpg" width="10%" height="10%" alt="Imagen de un cliente" class="client-image">
-            <blockquote class="client-opinion">Antes de usar Telegram Teams me pasaba...</blockquote>
+          <div class="col-6 col-sm-auto d-flex align-items-center">
+            <!-- <img src="./static/img/chavona 1.jpg" alt="Imagen de un cliente" class="client-image"> -->
+            <div class="photo-holder mr-4" id="profile-2"></div>
+            <blockquote class="client-opinion">
+              "Antes de usar Telegram Teams guardábamos la info en planillas de cálculo engorrosas y difíciles de actualizar. Ahora todo resulta más simple."<br>
+              <span class="client-name">Pilar Navarro, Lady Stork</span>
+            </blockquote>
           </div>
         </div>
       </article>
-      <article class="container">
-        <div class="row-flex justifify-content-between align-items-center">
-          <div class="col-12 col-md-6">
+      <article class="container" id="contact">
+        <div class="row-flex justify-content-center align-items-center">
+          <div class="col-12">
             <h2 class="text-center py-4">Formulario de contacto</h2>
-            <img src="" alt="Persona comunicándose">
-            <p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="contact-picture m-auto"></div>
+            <p class="pt-2 pb-4">
               <strong>Contacta ahora a un asesor de ventas para enterarte cómo elevar el número de conversiones
               de tu sitio web, e-commerce o tienda física de manera ágil e intuitiva.</strong><br>
               No es necesario que tengas conocimientos previos, nuestro equipo de asesores te guiarán en
@@ -259,7 +411,7 @@
               del paquete y saltar a la versión Pro cuando lo creas necesario.
             </p>
           </div>
-          <form class="col-12 col-md-6 py-4 mb-4 rounded" id="contact-form">
+          <form class="col-12 col-md-6 col-xl-4 py-4 mb-4 rounded" id="contact-form">
             <div class="input-group">
               <label for="firstName" class="input-label">Nombre</label>
               <input type="text" name="firstName" id="firstName" class="input required">
@@ -284,7 +436,7 @@
               <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
             </div>
             <button type="submit" class="btn btn-secondary mr-1 mb-2 mt-4">Quiero una demostración</button>
-            <button type="submit" class="btn btn-primary-outline mb-2">Iniciar Versión Free</button>
+            <!-- <button type="submit" class="btn btn-primary-outline mb-2">Iniciar Versión Free</button> -->
           </form>          
         </div>
       </article>
@@ -305,16 +457,28 @@
         </div>
         <nav class="nav-list col-auto text-center pt-4" id="site-nav">
           <ul class="nav-items">
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Módulos</a></li>
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Precios</a></li>
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Soporte</a></li>
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Ayuda</a></li>
+            <li class="nav-item pb-1">
+              <a href="#Modulos" class="nav-link">Módulos</a>
+            </li>
+            <li class="nav-item pb-1">
+              <a href="#PlanesyPrecios" class="nav-link">Precios</a>
+            </li>
+            <li class="nav-item pb-1">
+              <a href="#contact" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item pb-1">
+              <a href="#help" class="nav-link">Ayuda</a>
+            </li>
           </ul>
         </nav>
         <nav class="nav-list col-auto text-center pt-4 align-start">
           <ul class="nav-items">
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Nosotros</a></li>
-            <li class="nav-item pb-1"><a href="#" class="nav-link">Legales</a></li>
+            <li class="nav-item pb-1">
+              <a href="#us" class="nav-link">Nosotros</a>
+            </li>
+            <li class="nav-item pb-1">
+              <a href="#legal" class="nav-link">Legales</a>
+            </li>
           </ul>
         </nav>
         <div class="footer-image fiscal col-1 text-center">
@@ -323,12 +487,12 @@
         <div class="row-flex justify-content-center align-items-center" id="social">
           <div class="line neutral-subtle col-auto"></div>
           <div class="col-5 col-md-4 col-lg-3 col-xl-2 text-center">
-            <a href="https://web.telegram.org" class="social-link"><img src="static/img/telegram.svg" alt="Telegram" class="social-link-image"></a>
-            <a href="https://facebook.com" class="social-link"><img src="static/img/facebook.svg" alt="Facebook" class="social-link-image"></a>
-            <a href="https://instagram.com" class="social-link"><img src="static/img/instagram.svg" alt="Instagram" class="social-link-image"></a>
-            <a href="https://messenger.com" class="social-link"><img src="static/img/messenger.svg" alt="Messenger" class="social-link-image"></a>
-            <a href="https://whatsapp.com" class="social-link"><img src="static/img/whatsapp.svg" alt="Whatsapp" class="social-link-image"></a>
-            <a href="https://youtube.com" class="social-link"><img src="static/img/youtube.svg" alt="YouTube" class="social-link-image"></a>
+            <a href="https://web.telegram.org" class="social-link"><img src="static/img/telegram.svg" alt="Telegram" class="social-link-image inverted"></a>
+            <a href="https://facebook.com" class="social-link"><img src="static/img/facebook.svg" alt="Facebook" class="social-link-image inverted"></a>
+            <a href="https://instagram.com" class="social-link"><img src="static/img/instagram.svg" alt="Instagram" class="social-link-image inverted"></a>
+            <a href="https://messenger.com" class="social-link"><img src="static/img/messenger.svg" alt="Messenger" class="social-link-image inverted"></a>
+            <a href="https://whatsapp.com" class="social-link"><img src="static/img/whatsapp.svg" alt="Whatsapp" class="social-link-image inverted"></a>
+            <a href="https://youtube.com" class="social-link"><img src="static/img/youtube.svg" alt="YouTube" class="social-link-image inverted"></a>
           </div>
           <div class="line neutral-subtle col-auto"></div>
         </div>
@@ -343,5 +507,6 @@
    </div>
   </footer>
   <script src="./static/js/formValidation.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
