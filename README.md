@@ -21,12 +21,10 @@ Codo del año 2024.
 - Mauro Saucedo [ 
 [LinkedIn](https://www.linkedin.com/in/mauro-saucedo-degrafica/) - 
 [GitHub](https://github.com/saucem/) ]
-- Gabriela Perez Ojeda [ 
-[LinkedIn](https://www.linkedin.com/in/gabriela-andreina-p%C3%A9rez-ojeda-16b775124) 
-- [GitHub](https://github.com/Gaposubero) ] - Daniela Carvalho [ 
-[LinkedIn]() - [GitHub]() ]
-- Fernando Meza [
-[LinkedIn](https://www.linkedin.com/in/fernando-meza-mdp/) -
+- Gabriela Perez Ojeda [ [LinkedIn](https://www.linkedin.com/in/gabriela-andreina-p%C3%A9rez-ojeda-16b775124) 
+- [GitHub](https://github.com/Gaposubero) ]
+- Daniela Carvalho [ [LinkedIn]() - [GitHub]() ]
+- Fernando Meza [ [LinkedIn](https://www.linkedin.com/in/fernando-meza-mdp/) -
 [GitHub](https://github.com/fernandomezamdp/) ]
 
 
