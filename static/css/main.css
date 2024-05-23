@@ -955,6 +955,26 @@ strong{
 }
 
 /* Grupo de estilos Form de Registro*/
+.modal-background-2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0,0,0,.75);
+}
+.modal-container2{
+  width: 80%;
+  max-width: 600px;
+  max-height: 900px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  color: var(--neutral-color);
+  background-color: var(--neutral-light-color);
+  &#login-container{
+    max-width: 400px;
+  }
+
+ 
 
 .form-wrapper {
   position: absolute;
@@ -1014,6 +1034,7 @@ form .form-control {
 
 #birthdate{
   padding:16px 20px 0px;
+  font-size: 0.85em;
 }
 
 .form-control input:is(:focus, :valid)~label {
@@ -1074,6 +1095,7 @@ form .form-terms {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  font-size: 0.85em;
 }
 
 form .terms {
