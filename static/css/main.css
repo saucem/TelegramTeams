@@ -1075,9 +1075,9 @@ form button {
   transition: 0.1s ease;
 }
 
-form button:hover{
+/* form button:hover{
   /* color:var(--secondary-color)!important; */
-}
+} */
 
 .form-wrapper a {
   text-decoration: none;
