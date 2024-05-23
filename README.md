@@ -28,7 +28,7 @@ Codo del año 2024.
 
 Para clonar tu repositorio simplemente hace:
 
-```git clone https://github.com/fernandomezamdp/test-fer.git```
+```git clone https://github.com/saucem/TelegramTeams.git```
 
 Luego, abrir el archivo index.html con cualquier navegador
 
