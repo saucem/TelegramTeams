@@ -45,12 +45,13 @@
           </label>
         </li>
         <li class="cta d-none d-sm-inblock">
-          <a href="registroV2.html" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
+          <a href="#register" class="btn btn-secondary d-none d-lg-inblock">Comenzar gratis</a>
           <a href="#login" class="btn btn-neutral-outline">Iniciar sesión</a>
         </li>
       </ul>
     </nav>
   </header>  
+  
   <main>
     <section class="modal" id="login">
       <div class="modal-background">
@@ -65,7 +66,7 @@
             Podes utilizar tus credenciales para iniciar sesión
           </p>
           <p class="suggestion mt-1 text-end poppins-light">
-            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
+            Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
           <form action="" method="post" class="modal-form" id="login-form" novalidate>
             <div class="input-group my-4">
@@ -88,6 +89,76 @@
       </div>
     </section>
 
+    <section class="modal" id="register">
+      <div class="modal-background">
+        <div class="modal-container" id="register-container">
+          <header class="modal-header">
+            <figure class="col-6">
+              <img src="static/img/Imagotipo.svg" alt="Logo" class="w-100">
+            </figure>
+            <h2 class="col-12 text-center">Registrate aquí</h2>
+          </header>
+          <div class="modal-body">
+            <form action="#" id="formRegister" method="GET" novalidate>
+              <div class="input-group mb-4>">
+                <label for="firstname" class="input-label">Nombre</label>
+                <input type="text" required name="firstname" id="firstname" class="input">
+                <div class="error" id="error-firstname"></div>
+              </div>
+              <div class="input-group mb-4>">
+                <label for="lastname" class="input-label">Apellido</label>
+                <input type="text" required name="lastname" id="lastname" class="input">
+                <div class="error" id="error-lastname"></div>
+              </div>
+              <div class="input-group mb-4>">
+                <label for="email" class="input-label">Email</label>
+                <input type="email" required name="email" id="email" class="input">
+                <div class="error" id="error-email"></div>
+              </div>
+              <div class="input-group mb-4>">
+                <label for="password" class="input-label">Contraseña</label>
+                <input type="password" required name="password" id="password" class="input">
+                <div class="error" id="error-password"></div>
+              </div>
+              <div class="input-group mb-4>">
+                <label for="birthdate" class="input-label">Fecha de Nacimiento</label>
+                <input type="date" required name="birthdate" id="birthdate" class="input">
+              </div>
+              <div class="input-group mb-4>">
+                <label for="country" class="input-label">País</label>
+                <select name="country" id="country" class="input">
+                  <option value="">Seleccione</option>
+                  <option value="AR">Argentina</option>
+                  <option value="BO">Bolivia</option>
+                  <option value="BR">Brasil</option>
+                  <option value="CH">Chile</option>
+                  <option value="CO">Colombia</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Perú</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="VE">Venezuela</option>
+                </select>
+              </div>
+              <div class="input-group mb-4>">
+                <label for="captura" class="input-label">Foto de perfil</label>
+                <input type="file" name="Imagen" id="captura" class="input">
+              </div>
+              <br>
+              <div class="form-terms">
+                <div class="terms">
+                  <label for="terms" class="input-label">Acepto términos y condiciones</label>
+                  <input type="checkbox" id="terms" class="input mx-2">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-send">Registrarse</button>
+              <a href="#header" class="btn btn-neutral-outline">Cancelar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="modal" id="password-recovery">
       <div class="modal-background">
         <div class="modal-container" id="password-recovery-container">
@@ -101,7 +172,7 @@
             Ingresá el correo electrónico con el que te registraste. Te enviaremos un link para que puedas restablecer la contraseña e ingresar a la plataforma.
           </p>
           <p class="suggestion mt-1 text-end poppins-light">
-            Si aún no tenés una cuenta, podés <a href="registroV2.html">Registrarte aquí</a>
+            Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
           <form action="" method="post" class="modal-form" id="password-recovery-form" novalidate>
             <div class="input-group my-4">
@@ -244,11 +315,12 @@
               de mensajería con la potencia de Python<span class="copy">&trade;</span> y la solidez de MySQL<span class="copy">&trade;</span>
               para ayudar a los equipos de trabajo a potenciar las ventas, afianzando la relación con el cliente y aumentando la tasa de conversión.
             </p>
-            <a href="registroV2.html" class="btn btn-secondary my-4">Comenzar ahora</a>
+            <a href="#register" class="btn btn-secondary my-4">Comenzar ahora</a>
           </div>
         </div>
       </div>
     </section>
+    
     <section class="container-fluid" id="arguments">
       <div class="container py-4">
         <div class="row-flex d-flex align-items-center">
@@ -271,144 +343,141 @@
         </div>
       </div>
     </section>
-<section class="container-fluid" id="PlanesyPrecios">
-  <div class="container py-4">
-    <h2 class="text-center mb-2">Planes y Precios</h2>
-    <div class="row-flex">
-      <div class="d-flex justify-content-between">
-        <div class="col-12 col-md-5 precios-text card rounded ">
-          <h3 class="text-center mb-2">Version Gratuita</h3>
-          <br>
-          <h4>Para empresas en crecimiento.</h4>
-          <p>
-            Prueba Telegram Teams gratis durante 14 dias <br>
-            Descubre cómo te ayuda a impulsar las ventas. <br>
-            Prueba como podrías aumentar la eficiencia de tu equipo e incrementa la productividad. <br>
-            Brinda cotizaciones en línea. <br>
-            Construye tu base de contactos con información clave.
-            
-          </p>
-          <br>
-          <!-- <button class="btn btn-secondary my-4">Probar Ahora</button> -->
-          <a href="./registroV2.html"class="btn btn-primary">Probar ahora></a>
+
+    <section class="container-fluid" id="PlanesyPrecios">
+      <div class="container py-4">
+        <h2 class="text-center my-4">Planes y Precios</h2>
+        <div class="row-flex justify-content-center"> 
+          <div class="col-12 col-md-5 precios-text card rounded bg-secondary-light">
+            <h3 class="text-center mb-2">Versión Gratuita</h3>
+            <p>Prueba Telegram Teams totalmente gratis y descubre cómo puede ayudarte a impulsar las ventas. Puedes migrar a la versión Pro cuando lo creas necesario.</p>
+            <p class="text-center my-4"><strong>Para empresas y negocios en crecimiento.</strong></p><br>
+            <ul>
+              <li class="mb-2">Aumenta la eficiencia de tu equipo e incrementa la productividad.</li>
+              <li class="mb-2">Detecta a tiempo los puntos de estancamiento en el funnel de conversión.</li>
+              <li class="mb-2">Brinda cotizaciones en línea sin demoras.</li>
+              <li class="mb-2">Construye tu base de contactos con información clave.</li>
+              <li class="mb-2">No es necesario brindar datos de pago.</li>
+            </ul>
           </div>
-        <div class="col-12 col-md-5 precios-text card rounded">
-        <h3>Version Premium</h3>
-        <br>
-        <p>Transforme la experiencia de sus clientes de atracción a conversión. 
-          Revolucione su CRM con características avanzadas e inteligencia</p>
-        <br>
-        <h4>Para grandes empresas que manejan muchos leads
-        </h4>
-        <ul>
-          <li>Consolidación y gestión de datos de clientes. <br> 
-            Guarda información sobre potenciales clientes almacenando datos de cada interacción. <br>  
-            Crea recordatorios y envía mensajería personalizada.</li>
-          <li>Optimiza tu proceso de ventas mediante el seguimiento de leads.</li>
-          <li>Agiliza y mejora la colaboración del equipo</li>
-          <li>Accede a informes en tiempo real sobre métricas claves para tu negocio</li>
-          <li>Capitaliza oportunidades de ventas mediante la aplicación del intérprete de lenguaje natural con su poder de analizar intenciones de venta</li>
-        </ul>
-        <p>
-          <br>
-          <!-- <p>
-            150 USD por mes
-          </p>
-          <br> -->
-          <!-- <button class="btn btn-primary my-4">Contratar</button> -->
-          <a href="./registroV2.html"class="btn btn-primary my-4">Contratar</a>
+          
+          <div class="col-12 col-md-5 precios-text card rounded bg-secondary-light">
+            <h3 class="text-center mb-2">Versión Pro</h3>
+            <p>Transforme la experiencia de sus clientes de atracción a conversión. Revolucione su CRM con características avanzadas e inteligencia</p>
+            <p class="text-center my-4"><strong>Para grandes empresas con alto volumen de leads</strong></p>
+            <ul>
+              <li class="mb-2">Consolide y gestione los datos de sus clientes. 
+                Guarde información sobre clientes potenciales almacenando los datos de cada interacción. 
+                Cree recordatorios y envíe mensajes personalizados y relevantes.
+              </li>
+              <li class="mb-2">Optimice su proceso de ventas mediante el seguimiento de leads.</li>
+              <li class="mb-2">Logre agilizar y mejorar la colaboración del equipo.</li>
+              <li class="mb-2">Acceda a informes en tiempo real sobre métricas claves de su negocio.</li>
+              <li class="mb-2">Capitalice oportunidades de venta mediante la aplicación del intérprete 
+                de lenguaje natural, capaz de analizar intenciones de conversión.
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    <div class="container py-4">
-      <div class="col-12 col-md-6 precios-text align-items-center py-4">
-        <h3>Comparar planes</h3>
-        <br>
-        <div class="justify-content-center align-items-center"> 
-          <table border="0" class="text-center">
-          <tr >
-            <th>Funcionalidad</th>
-            <th>Versión Gratuita</th>
-            <th>Versión Premium</th>
-          </tr>
-          <tr>
-            <td>Mensualidad</td>
-            <td>0 USD</td>
-            <td>150 USD</td>
-          </tr>
-          <tr>
-            <td>Usuarios</td>
-            <td>1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Integración Telegram</td>
-            <td>Conversaciones limitadas</td>
-            <td>Conversaciones ilimitadas</td>
-          </tr>  
-          <tr>
-            <td>Módulos</td>
-            <td>CRM limitado</td>
-            <td>CRM avanzado + Analytics</td>
-          </tr>
-          <tr>
-            <td>Gestión de contactos</td>
-            <td>Creación de lista de contactos básica</td>
-            <td>Creación e importación de base de contactos con atributos</td>
-          </tr>
-          <tr>
-            <td>Plantillas de Mensajes</td>
-            <td>N/A</td>
-            <td>Ilimitadas</td>
-          </tr>
-          </table>
+
+        <div class="row-flex justify-content-center align-items-center py-4">
+          <div class="col-12 col-md-10 rounded bg-neutral-light precios-text px-4">
+            <h3 class="text-center my-4" id="comparative-title">Comparar planes</h3>
+            <div class="justify-content-center align-items-center"> 
+              <table class="w-100">
+                <tr class="text-center">
+                  <th class="table-row-header text-start">&nbsp;</th>
+                  <th>Versión Gratuita</th>
+                  <th>Versión Pro</th>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Abono mensual</td>
+                  <td class="text-center">0 USD</td>
+                  <td class="text-center">150 USD</td>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Usuarios</td>
+                  <td class="text-center">1</td>
+                  <td class="text-center">10</td>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Integración con Telegram</td>
+                  <td class="text-center">Conversaciones limitadas</td>
+                  <td class="text-center">Conversaciones ilimitadas</td>
+                </tr>  
+                <tr>
+                  <th class="table-row-header text-start">Módulo CRM</td>
+                  <td class="text-center">Básico</td>
+                  <td class="text-center">Avanzado</td>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Módulo Analytics</td>
+                  <td class="text-center">No disponible</td>
+                  <td class="text-center">Habilitado</td>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Gestión de contactos</td>
+                  <td class="text-center">Lista de contactos básica</td>
+                  <td class="text-center">Creación e importación de base<br>de contactos con atributos</td>
+                </tr>
+                <tr>
+                  <th class="table-row-header text-start">Plantillas de Mensajes</td>
+                  <td class="text-center">No disponible</td>
+                  <td class="text-center">Ilimitadas</td>
+                </tr>
+                <tr class="text-center">
+                  <td>&nbsp;</td>
+                  <td>
+                    <a href="#register"class="btn btn-secondary-outline">Probar ahora</a>
+                  </td>
+                  <td>
+                    <a href="#contact-form" class="btn btn-secondary">Contratar</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </div>
     </section>
+
     <section class="container-fluid" id="Modulos">
       <div class="container py-4">
-        <h2 class="text-center mb-2">Módulos</h2>
-        <div class="row-flex">   
-          <div class="d-flex justify-content-between">
-            <div class="col-12 col-md-5 modulo-text card2 rounded">
-                <h3>CRM para ventas</h3>
-                <br>
-                <h4>Optimiza la interacción con tus clientes y transforma contactos en ventas</h4>
-                <br>
-                <p>        
-                Centraliza tus conversaciones con clientes en un buzón grupal y omnicanal. <br>
-                Brinda acceso a tantos usuarios como necesites de tu equipo y podrán recibir conversaciones en tiempo real. 
-                Asigna las conversaciones a tus agentes en línea y agiliza la rapidez en tus respuestas.
-                Podrás enviar mensajes personalizados a todos tus clientes sin límite y establecer recordatorios lo que te ayudará a potencia tus ventas.
-                </p>
-                <a href="./registroV2.html"class="btn btn-primary my-4">Contratar></a>
-                <a href="#contact-form" class="btn btn-secondary my-4">Cómo funciona</a>
-                <!-- <button class="btn btn-secondary my-4">Cómo funciona</button> -->
-            </div>
-            <div class="col-12 col-md-5 modulo-text card2 rounded mx-2"> 
-                <h3>Analytics</h3>
-                <br>
-                <p>
-                  Sigue el rendimiento con informes en tiempo real y paneles personalizables.
-                </p>
-                <br>
-                <p>
-                  Analiza y controla las estadísticas para mayor control sobre el rendimiento del equipo. <br>
-                  Crea dashboards personalizados para seguir tus indicadores y objetivos. <br>
-                  Obtén métricas de tus conversaciones y atención de agentes. <br>
-                  Potencia tu fidelización con la mejora de tu servicio basada en datos.
-                </p>
-                <!-- <button class="btn btn-primary my-4">Contratar</button> -->
-                <a href="./registroV2.html"class="btn btn-primary my-4">Contratar</a>
-                <a href="#contact-form" class="btn btn-secondary my-4">Cómo funciona</a>
-                <!-- <button class="btn btn-secondary my-4">Cómo funciona</button> -->
-                <a href="mailto:telegramteams@gmail.com">Solicitar Demo</a>
-            </div>
+        <h2 class="text-center my-4">Módulos</h2>
+        <div class="row-flex justify-content-center mb-4">   
+          <div class="col-12 col-md-5 modulo-text card rounded bg-primary-light">
+            <h3>CRM para ventas</h3>
+            <br>
+            <h4>Optimiza la interacción con tus clientes y transforma contactos en ventas</h4>
+            <br>
+            <p>        
+            Centraliza tus conversaciones con clientes en un buzón grupal y omnicanal. <br>
+            Brinda acceso a tantos usuarios como necesites de tu equipo y podrán recibir conversaciones en tiempo real. 
+            Asigna las conversaciones a tus agentes en línea y agiliza la rapidez en tus respuestas.
+            Podrás enviar mensajes personalizados a todos tus clientes sin límite y establecer recordatorios lo que te ayudará a potencia tus ventas.
+            </p>
+            <a href="#register"class="btn btn-primary mt-4">Comenzar</a>
+            <a href="#contact-form" class="btn btn-primary-outline mt-4">Conocer más...</a>
+          </div>
+          <div class="col-12 col-md-5 modulo-text card rounded bg-primary-light"> 
+            <h3>Analytics</h3>
+            <br>
+            <p>Sigue el rendimiento con informes en tiempo real y paneles personalizables.</p>
+            <br>
+            <p>
+              Analiza y controla las estadísticas para mayor control sobre el rendimiento del equipo. <br>
+              Crea dashboards personalizados para seguir tus indicadores y objetivos. <br>
+              Obtén métricas de tus conversaciones y atención de agentes. <br>
+              Potencia tu fidelización con la mejora de tu servicio basada en datos.
+            </p>
+            <a href="#register"class="btn btn-primary mt-4">Contratar Pro</a>
+            <a href="#" class="btn btn-primary-outline mt-4">Conocer más</a>
+            <a href="mailto:telegramteams@gmail.com" class="btn btn-transparent-light">Solicitar Demo</a>
           </div>
         </div>
       </div>
     </section>  
+
     <section class="container-fluid" id="feedback" >
       <article class="container">
         <div class="row-flex justify-content-center align-items-end my-4">
@@ -467,11 +536,19 @@
               <div class="input-group">
                 <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
               </div>
-              <button type="submit" class="btn btn-secondary mr-1 mb-2 mt-4">Quiero una demostración</button>
+              <button type="submit" class="btn btn-secondary mr-1 mb-2 mt-4">Quiero que me contacten</button>
             </form>          
           </div>
         </div>
       </article>
+    </section>
+
+    <section class="container-fluid" id="faq">
+      <!--
+        Anchor with question
+        Paragraph with answer hidden by default
+        When anchor is clicked, target paragraph shows. When clicked again, paragraph hides.
+      -->
     </section>
 
 
@@ -541,6 +618,7 @@
    </div>
   </footer>
   <script src="./static/js/formValidation.js"></script>
+  <script src="./static/js/Validationformregister.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
