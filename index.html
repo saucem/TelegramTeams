@@ -13,8 +13,8 @@
 <body class="poppins-regular">
   <header id="header">
     <nav class="nav-bar">
+      <input type="checkbox" name="checkbox" id="toggler" class="d-none">
       <ul class="nav-items d-flex" id="collapsible">
-        <input type="checkbox" name="checkbox" id="toggler" class="d-none">
         <li class="brand">
           <a href="index.html" class="brand-name poppins-bold d-sm-none">
             Telegram <span>Teams</span>
@@ -68,7 +68,7 @@
           <p class="suggestion mt-1 text-end poppins-light">
             Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
-          <form action="" method="post" class="modal-form" id="login-form" novalidate>
+          <form method="post" class="modal-form" id="login-form" novalidate>
             <div class="input-group my-4">
               <label for="user-name" class="input-label p-0">Usuario</label>
               <input type="text" name="user-name" id="user-name" class="input required">
@@ -116,8 +116,8 @@
                 <div class="error" id="error-email"></div>
               </div>
               <div class="input-group mb-4>">
-                <label for="password" class="input-label">Contraseña</label>
-                <input type="password" required name="password" id="password" class="input">
+                <label for="newPassword" class="input-label">Contraseña</label>
+                <input type="password" required name="newPassword" id="newPassword" class="input">
                 <div class="error" id="error-password"></div>
               </div>
               <div class="input-group mb-4>">
@@ -174,7 +174,7 @@
           <p class="suggestion mt-1 text-end poppins-light">
             Si aún no tenés una cuenta, podés <a href="#register">Registrarte aquí</a>
           </p>
-          <form action="" method="post" class="modal-form" id="password-recovery-form" novalidate>
+          <form method="post" class="modal-form" id="password-recovery-form" novalidate>
             <div class="input-group my-4">
               <label for="user-email" class="input-label p-0">Correo electrónico</label>
               <input type="email" name="user-email" id="user-email" class="input required">
@@ -247,7 +247,7 @@
               <p class="poppins-bold">Daniela Carvalho<br>
                 <span class="poppins-regular">
                   <a href="https://www.linkedin.com/in/" class="social-link">
-                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    <img src="static/img/linkedin-blue.svg" width="16" alt="Linkedin" class="social-link-image">
                     Ir al perfil
                   </a>
                 </span>
@@ -258,7 +258,7 @@
               <p class="poppins-bold">Fernando Meza<br>
                 <span class="poppins-regular">
                   <a href="https://www.linkedin.com/in/fernando-meza-mdp/" class="social-link">
-                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    <img src="static/img/linkedin-blue.svg" width="16" alt="Linkedin" class="social-link-image">
                     Ir al perfil
                   </a>
                 </span>
@@ -269,7 +269,7 @@
               <p class="poppins-bold">Gabriela Pérez Ojeda<br>
                 <span class="poppins-regular">
                   <a href="https://www.linkedin.com/in/gabriela-andreina-pérez-ojeda-16b775124" class="social-link">
-                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    <img src="static/img/linkedin-blue.svg" width="16" alt="Linkedin" class="social-link-image">
                     Ir al perfil
                   </a>
                 </span>
@@ -280,7 +280,7 @@
               <p class="poppins-bold">Mauro Saucedo<br>
                 <span class="poppins-regular">
                   <a href="https://www.linkedin.com/in/mauro-saucedo-degrafica" class="social-link">
-                    <img src="static/img/linkedin-blue.svg" width="16px" alt="Linkedin" class="social-link-image">
+                    <img src="static/img/linkedin-blue.svg" width="16" alt="Linkedin" class="social-link-image">
                     Ir al perfil
                   </a>
                 </span>
@@ -325,7 +325,7 @@
       <div class="container py-4">
         <div class="row-flex d-flex align-items-center">
           <div class="col-12 col-md-6 iframe-container">
-            <iframe src="https://www.youtube.com/embed/cgNTtM44-Dk?si=NvdOozsj8-tQCxcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" class="responsive-iframe"></iframe>
+            <iframe src="https://www.youtube.com/embed/cgNTtM44-Dk?si=NvdOozsj8-tQCxcN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" class="responsive-iframe"></iframe>
           </div>
           <div class="col-12 col-md-6">
             <h2 class="text-center mb-2">Por qué usar un CRM</h2>
@@ -391,44 +391,44 @@
                   <th>Versión Pro</th>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Abono mensual</td>
+                  <th class="table-row-header text-start">Abono mensual</th>
                   <td class="text-center">0 USD</td>
                   <td class="text-center">150 USD</td>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Usuarios</td>
+                  <th class="table-row-header text-start">Usuarios</th>
                   <td class="text-center">1</td>
                   <td class="text-center">10</td>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Integración con Telegram</td>
+                  <th class="table-row-header text-start">Integración con Telegram</th>
                   <td class="text-center">Conversaciones limitadas</td>
                   <td class="text-center">Conversaciones ilimitadas</td>
                 </tr>  
                 <tr>
-                  <th class="table-row-header text-start">Módulo CRM</td>
+                  <th class="table-row-header text-start">Módulo CRM</th>
                   <td class="text-center">Básico</td>
                   <td class="text-center">Avanzado</td>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Módulo Analytics</td>
+                  <th class="table-row-header text-start">Módulo Analytics</th>
                   <td class="text-center">No disponible</td>
                   <td class="text-center">Habilitado</td>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Gestión de contactos</td>
+                  <th class="table-row-header text-start">Gestión de contactos</th>
                   <td class="text-center">Lista de contactos básica</td>
                   <td class="text-center">Creación e importación de base<br>de contactos con atributos</td>
                 </tr>
                 <tr>
-                  <th class="table-row-header text-start">Plantillas de Mensajes</td>
+                  <th class="table-row-header text-start">Plantillas de Mensajes</th>
                   <td class="text-center">No disponible</td>
                   <td class="text-center">Ilimitadas</td>
                 </tr>
                 <tr class="text-center">
                   <td>&nbsp;</td>
                   <td>
-                    <a href="#register"class="btn btn-secondary-outline">Probar ahora</a>
+                    <a href="#register" class="btn btn-secondary-outline">Probar ahora</a>
                   </td>
                   <td>
                     <a href="#contact-form" class="btn btn-secondary">Contratar</a>
@@ -456,7 +456,7 @@
             Asigna las conversaciones a tus agentes en línea y agiliza la rapidez en tus respuestas.
             Podrás enviar mensajes personalizados a todos tus clientes sin límite y establecer recordatorios lo que te ayudará a potencia tus ventas.
             </p>
-            <a href="#register"class="btn btn-primary mt-4">Comenzar</a>
+            <a href="#register" class="btn btn-primary mt-4">Comenzar</a>
             <a href="#contact-form" class="btn btn-primary-outline mt-4">Conocer más...</a>
           </div>
           <div class="col-12 col-md-5 modulo-text card rounded bg-primary-light"> 
@@ -470,7 +470,7 @@
               Obtén métricas de tus conversaciones y atención de agentes. <br>
               Potencia tu fidelización con la mejora de tu servicio basada en datos.
             </p>
-            <a href="#register"class="btn btn-primary mt-4">Contratar Pro</a>
+            <a href="#register" class="btn btn-primary mt-4">Contratar Pro</a>
             <a href="#" class="btn btn-primary-outline mt-4">Conocer más</a>
             <a href="mailto:telegramteams@gmail.com" class="btn btn-transparent-light">Solicitar Demo</a>
           </div>
@@ -517,10 +517,10 @@
     </section>
 
     <section class="container-fluid" id="feedback" >
+      <h2 class="text-center mb-4">¿Qué dicen nuestros usuarios?</h2>
       <article class="container">
         <div class="row-flex justify-content-center align-items-end my-4">
           <div class="col-12 col-lg-7">
-            <h2 class="text-center mb-4">¿Qué dicen nuestros usuarios?</h2>
             <div class="col-11 d-flex align-items-center mt-2 mx-auto">
               <div class="photo-holder mr-4" id="profile-1"></div>
               <blockquote class="client-opinion">
@@ -569,7 +569,7 @@
               </div>
               <div class="input-group">
                 <label for="message" class="input-label">Contanos acerca de tu negocio</label>
-                <textarea class="poppins-regular input" name="message" id="message"></textarea class="input">
+                <textarea class="poppins-regular input" name="message" id="message"></textarea>
                 </div>
               <div class="input-group">
                 <label for="useTelegram" class="input-label">Prefiero que me contacten por Telegram<input type="checkbox" class="mx-2" name="useTelegram" id="useTelegram"></label>
@@ -582,8 +582,9 @@
     </section>
 
   </main>
+  
   <footer>
-    <section class="container pt-4" id="contact-info" >
+    <div class="container pt-4" id="contact-info" >
       <div class="row-flex align-items-center justify-content-between">
         <div class="footer-image logo col-sm-3 col-md-2">
           <img src="static/img/Imagotipo.svg" alt="logo" class="w-100 desaturated">
@@ -633,19 +634,15 @@
           </div>
           <div class="line neutral-subtle col-auto"></div>
         </div>
-        
       </div>
+      <p class="copy poppins-light text-center py-4">Telegram Teams &copy; 2024 | Todos los derechos reservados</p>
     </div>
-  </section>
-  
-    <p class="copy poppins-light text-center py-4">Telegram Teams &copy; 2024 | Todos los derechos reservados</p>
-   <div>
-    
-   </div>
   </footer>
+  
   <script src="./static/js/formValidation.js"></script>
   <script src="./static/js/Validationformregister.js"></script>
   <script src="./static/js/accordion.js"></script>  
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 </html>
