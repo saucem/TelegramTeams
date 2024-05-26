@@ -18,23 +18,17 @@ Codo del año 2024.
 
 ## Integrantes
 
-- Mauro Saucedo [ 
-[LinkedIn](https://www.linkedin.com/in/mauro-saucedo-degrafica/) - 
-[GitHub](https://github.com/saucem/) ]
-- Gabriela Perez Ojeda [ 
-[LinkedIn](https://www.linkedin.com/in/gabriela-andreina-p%C3%A9rez-ojeda-16b775124) 
-- [GitHub](https://github.com/Gaposubero) ] - Daniela Carvalho [ 
-[LinkedIn]() - [GitHub]() ]
-- Fernando Meza [
-[LinkedIn](https://www.linkedin.com/in/fernando-meza-mdp/) -
-[GitHub](https://github.com/fernandomezamdp/) ]
+- Mauro Saucedo [ [LinkedIn](https://www.linkedin.com/in/mauro-saucedo-degrafica/) - [GitHub](https://github.com/saucem/) ]
+- Gabriela Perez Ojeda [ [LinkedIn](https://www.linkedin.com/in/gabriela-andreina-p%C3%A9rez-ojeda-16b775124) - [GitHub](https://github.com/Gaposubero) ] 
+- Daniela Carvalho [ [LinkedIn]() - [GitHub]() ]
+- Fernando Meza [ [LinkedIn](https://www.linkedin.com/in/fernando-meza-mdp/) - [GitHub](https://github.com/fernandomezamdp/) ]
 
 
 ## Clonar el repositorio
 
 Para clonar tu repositorio simplemente hace:
 
-```git clone https://github.com/fernandomezamdp/test-fer.git```
+```git clone https://github.com/saucem/TelegramTeams.git```
 
 Luego, abrir el archivo index.html con cualquier navegador
 
