@@ -1027,6 +1027,9 @@ strong{
   border-radius: 1em;
   color: var(--neutral-color);
   background-color: var(--neutral-light-color);
+  &#login-container{
+    max-width: 400px;
+  }
 }
 
 .form-wrapper {
@@ -1106,7 +1109,6 @@ form .form-control {
   background: rgba(255,255,255,0.1);
   border: 2px solid --neutral-dark-color; 
   border-radius: 25px;
-
 }
 
 .form-select option{
@@ -1114,7 +1116,6 @@ form .form-control {
 } 
 
 form button {
-  /* width: 100%; */
   padding: 16px 0;
   font-size: 1rem;
   background-color: var(--primary-color);
@@ -1127,10 +1128,6 @@ form button {
   cursor: pointer;
   transition: 0.1s ease;
 }
-
-/* form button:hover{
-  color:var(--secondary-color)!important;
-} */
 
 .form-wrapper a {
   text-decoration: none;
