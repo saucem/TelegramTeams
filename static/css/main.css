@@ -973,8 +973,7 @@ strong{
   &#login-container{
     max-width: 400px;
   }
-
- 
+}
 
 .form-wrapper {
   position: absolute;
@@ -1053,7 +1052,6 @@ form .form-control {
   background: rgba(255,255,255,0.1);
   border: 2px solid --neutral-dark-color; 
   border-radius: 25px;
-
 }
 
 .form-select option{
@@ -1061,7 +1059,6 @@ form .form-control {
 } 
 
 form button {
-  /* width: 100%; */
   padding: 16px 0;
   font-size: 1rem;
   background-color: var(--primary-color);
@@ -1073,10 +1070,6 @@ form button {
   margin: 25px 0 10px;
   cursor: pointer;
   transition: 0.1s ease;
-}
-
-form button:hover{
-  /* color:var(--secondary-color)!important; */
 }
 
 .form-wrapper a {
@@ -1132,27 +1125,3 @@ form .form-terms :where(label, a) {
 .form-control input.error, .form-select.error{
   border: 2px solid red; 
 }
-
-
-
-/* Experimental develop */
-/* .row-grid{
-  display: grid;
-  width: 100%;
-  padding: 6px;
-  grid-template-columns: repeat(12,1fr);
-  gap: 12px;
-  align-items: center;
-}
-.g-col-1{grid-column-start: span 1;}
-.g-col-2{grid-column-start: span 2;}
-.g-col-3{grid-column-start: span 3;}
-.g-col-4{grid-column-start: span 4;}
-.g-col-5{grid-column-start: span 5;}
-.g-col-6{grid-column-start: span 6;}
-.g-col-7{grid-column-start: span 7;}
-.g-col-8{grid-column-start: span 8;}
-.g-col-9{grid-column-start: span 9;}
-.g-col-10{grid-column-start: span 10;}
-.g-col-11{grid-column-start: span 11;}
-.g-col-12{grid-column-start: span 12;} */
