@@ -569,14 +569,14 @@ strong{
         & .nav-items{text-align: center;}
       }
       .icon-toggler{display: block;}
-      #toggler:checked ~ .nav-item{
+      #toggler:checked ~ ul .nav-item{
         display: block;
         text-align: right;
       }
-      #toggler:checked ~ .collapse-toggler #icon-list{
+      #toggler:checked ~ ul .collapse-toggler #icon-list{
         display: none;
       }
-      #toggler:checked ~ .collapse-toggler #icon-close{
+      #toggler:checked ~ ul .collapse-toggler #icon-close{
         display: block;
       }
       .collapse-toggler{
