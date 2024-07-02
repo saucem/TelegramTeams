@@ -1,4 +1,4 @@
-const BASEURL = 'http://telegramteams.pythonanywhere.com/';
+const BASEURL = 'https://telegramteams.pythonanywhere.com/';
 // ----------------------------------------------------------------------------------------------------------------
 /**
 * Función para realizar una petición fetch con JSON.
