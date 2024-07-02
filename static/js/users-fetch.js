@@ -104,7 +104,6 @@ const formUser = document.querySelector('#user-data-form');
 formUser.reset(); //No borra los inputs del tipo "hidden", entonces hay que borrarlo a mano
 const idField = document.querySelector('#user-id');
 idField.value = null;
-alert(idField, userId);
 Swal.fire({
   title: 'Exito!',
   text: result.message,
