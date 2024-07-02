@@ -54,6 +54,9 @@
 /* semantic tags styling start */
 body{
   position:relative;
+  &.app{
+    background-color: var(--primary-dark-color);
+  }
 }
 
 header{
@@ -79,6 +82,10 @@ footer{
   /* min-height: 20vh; */
   color:var(--neutral-subtle-color);
   background-color: var(--neutral-dark-color);
+  &.app{
+    position: fixed;
+    bottom: 0;
+  }
   & a{color: var(--neutral-subtle-color);}
 }
 
@@ -151,6 +158,9 @@ tr{
 
 td{
   width: 30%;
+  &.app{
+    width: unset;
+  }
   &.table-row-header{
     width: 40%;
   }
@@ -159,6 +169,10 @@ td{
 th, .table-row-header{
   font-size: 1.25em;
   color: var(--secondary-color);
+  &.app{
+    font-size: 1.1em;
+    text-align: start;
+  }
 }
 
 th, td{
@@ -495,7 +509,7 @@ strong{
       gap: calc(0 * var(--gutter));
     }
 
-    [class^="col-"] {flex: 0 0 auto; padding: calc(1 * var(--gutter));}
+    [class*="col-"] {flex: 0 0 auto; padding: calc(1 * var(--gutter));}
 
     .col-auto{flex: 1 0 0; max-width: 100%}
     
@@ -526,12 +540,20 @@ strong{
     .container-fluid{
       position: relative;
       width: 100%;
+
     }
 
     .container{
       position: relative;
       margin: 0 auto;
       width: 100%;
+      &.app{
+        overflow-y: auto;
+        padding-bottom: 10vh;
+        & h2{
+          font-size: 1.25em;
+        };
+      }
     }
 
     .iframe-container{

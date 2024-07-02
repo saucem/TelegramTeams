@@ -39,11 +39,14 @@ const validate = (event) => {
     if (!foundError){
       if (currentForm.id === "password-recovery-form"){
         swal("¡Enviado!", "Revisa las instrucciones en el correo que te enviamos para poder restablecer tu contraseña y volver a iniciar sesión.");
+        currentForm.querySelector(".dismiss-modal").click();
       } else {
-        swal("¡Ingresaste a la plataforma!", "Ya podés comenzar a generar ventas.");
+        //swal("¡Ingresaste a la plataforma!", "Ya podés comenzar a generar ventas.");
+        //currentForm.querySelector(".dismiss-modal").click();
+        window.location.assign("launcher.html")
       }
       //currentForm.submit();
-      currentForm.querySelector(".dismiss-modal").click();
+      //currentForm.querySelector(".dismiss-modal").click();
     }
   }
 }
